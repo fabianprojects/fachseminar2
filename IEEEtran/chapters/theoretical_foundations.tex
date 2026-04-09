@@ -66,6 +66,8 @@ Furthermore, the region of interest (ROI) significantly impact the accuracy of t
 
 \subsubsection{Chrom approach}
 
+%  den abschnitt nocheinmal prüfen
+
 The Chrominance-based method (CHROM) introduced a physicsbased alternative. It solves the big challenge of subject motion, when calculating the heart beat. Periodic movements can render simple intensity-based selections useless. Furthermore, while many algorithms require long observation intervals to achieve sufficient frequency resolution, CHROM is designed to be highly efficient. Similarly to traditional methods like PCA or ICA, the chrom algorithm also uses the fact that the blood absorb a large percentage of green light. Additionally it analyzes how the light is reflected on the human skin. According to the dichromatic reflection model this reflection has a Specular and a Diffused Component (Figure \ref{fig:chrom_light}). Only the diffuse Reflexion enters the skin and has the color of the blood. The specular reflexion does not enter the skin. It is just reflected on the surface and thus does not contain any information about the blood. This specular part is an additive value and thus the division of the two  color channels does not cancel this effect out. Thereforce, a subtraktive approach is used \cite{dehaan2013chrom}.
 
 $$(R + noise) - (G + noise) = R - G$$
@@ -114,3 +116,31 @@ In the past years powerful Large Language Models (LLMS) like ChatGPT have emerge
 There are lot of different approaches to calculate the heartbeat with an rPPG technique.
 Modern Deep Learning Algorithms have emerged in the recent years. They show promising results, although there are not enough diverse datasets. The CHROM Algorithms is promising for a realtime evaluation of data. Traditionally algorithms like PCA are slow and not so precise.
 Although, there has been a huge advancement in the past years, there are still no long-term studies that monitor the heart beat over several hours. Most researches only test rPPG for a short time, which does not show how it works in real daily life \cite{Debnath25}.
+
+\subsection{Mapping of heart beat to music}
+
+
+
+% den abschnitt nocheinmal prüfen 
+
+RPPG Techniques provide the functionality to measure the heart beat remotely. These measurements then need to be converted to music.
+
+There has been some research on passive music listening without any biofeedback mechanism. According to a meta-analysis by  Pelletier(2004), music consistently assists in lowering stress levels. The magnitude of this response is affected by several factors. Patients with prior musical experience, such as playing an instrument, tend to lower their stress levels a lot more.
+Furthermore, Pelletier notes that indivudal therapy generally results in better relaxation than group session. Although, group sessions are used much more often because they are less expensive. A huge obstacle is that the devices that are used for data collection often cause discomfort. This can lead to false data regarding the relaxation process. Finally, the study suggests that music based on scientific research (e.g., specific rhythmic or frequency patterns) is more effective for stress reduction that music chosen soley based on personal preference \cite{pelletier2004effect}.
+In another study, Linnemann et al. examined how music affects stress in daily life rather than in a laboratory. They came to the conclusion that listening to music can effectively reduce stress levels. Nevertheless, the largest effect is reached when subjects listen to music with then intention of decreasing stress levels. This suggests that the reason why someons listens to music is very important for the actual stress-reducing effect \cite{linnemann2015music}.
+
+These results are also supported by another study \cite{thoma2011listening}. They confirm that listening to music alone does not automatically decrease stress levels. Instead,  the reason of listening to the music is the most important factor. For example, if someone listens to music to cope with loneliness, it might effectively decrease their feeling of isolation. Nevertheless, if the goal is relaxation, the music only works well if the listener has the specific intention to relax \cite{thoma2011listening}.
+
+The study of Bernardi et al. (2006) confirms that the results do not depend on the music preferation of the user rather on the BPM and rhythm structure of the music. Additionally, the study found no evidence of habituation, meaning the users do not simply 'get used' to the music over time. In Contrast to Linnemann et al. (2015), who emphasized the importance of the listener's intention, Bernadi concludes that music can be perceived as a passive form of meditaiton. consequently, this means that the user does not need an intend to reduce stress for measurable results \cite{bernardi2006cardiovascular}.
+
+Passive Music Listening without any Biofeedback system has mixed results. To covnert the heartbeat to music, a process called mapping is necessary that takes the heart beat as an input and outputs a song. There are two forms of structural mapping processes: Continuous Mapping and discrete mapping. During the continuous mapping the volume, the BPM are directly and constantly modulated by the incoming rPPG data stream. This provides the user with an immediate, "analog" reflection of their physiological state, which is essential for developing fine-tuned accuracy. On the other hand discrete mapping only changes the song or the frequency when a specific threshold is reached. This strategy is particularly effective for signaling long-term state transitions or poviding clear rewards for successful relxation.
+
+The Biofeedback Music has certain functional roles. It acts as a monitor so that the user can perceive internal processes, that are otherwise hidden from the conscious mind. It also acts as a guide because it pulls the user to a specific desired physiological state. Additionally, it acts as a reinforce as it increases the users' motivation with the process over extended periods \cite{bergstrom2014using}.
+
+
+
+
+
+
+
+
