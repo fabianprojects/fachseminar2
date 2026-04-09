@@ -20,10 +20,33 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
-\bibitem{mcewen2017neurobiology}
-B.~S. McEwen, ``Neurobiological and systemic effects of chronic stress,'' \emph{Chronic Stress}, vol.~1, p. 2470547017692328, 2017.
+\bibitem{verkruysse2008remote}
+W.~Verkruysse, L.~O. Svaasand, and J.~S. Nelson, ``Remote plethysmographic imaging using ambient light,'' \emph{Optics Express}, vol.~16, no.~26, pp. 21\,466--21\,475, 2008.
 
 \bibitem{giggins2013biofeedback}
 O.~M. Giggins, U.~M. Persson, and B.~Caulfield, ``Biofeedback in rehabilitation,'' \emph{Journal of NeuroEngineering and Rehabilitation}, vol.~10, no.~1, p.~60, 2013.
+
+\bibitem{mccorry2007physiology}
+L.~K. McCorry, ``Physiology of the autonomic nervous system,'' \emph{American Journal of Pharmaceutical Education}, vol.~71, no.~4, p.~78, 2007.
+
+\bibitem{mcewen2017neurobiology}
+B.~S. McEwen, ``Neurobiological and systemic effects of chronic stress,'' \emph{Chronic Stress}, vol.~1, p. 2470547017692328, 2017.
+
+\bibitem{shaffer2017overview}
+F.~Shaffer and J.~Ginsberg, ``An overview of heart rate variability metrics and norms,'' \emph{Frontiers in Public Health}, vol.~5, p. 258, 2017.
+
+\bibitem{dehaan2013chrom}
+G.~de~Haan and V.~Jeanne, ``Robust pulse rate from chrominance-based rppg,'' \emph{IEEE Transactions on Biomedical Engineering}, vol.~60, no.~10, pp. 2878--2886, 2013.
+
+\bibitem{Debnath25}
+U.~Debnath and S.~Kim, ``A comprehensive review of heart rate measurement using remote photoplethysmography and deep learning,'' \emph{BioMedical Engineering OnLine}, vol.~24, no.~1, p.~73, 2025.
+
+\bibitem{pan2009survey}
+S.~J. Pan and Q.~Yang, ``A survey on transfer learning,'' \emph{IEEE Transactions on Knowledge and Data Engineering}, vol.~22, no.~10, pp. 1345--1359, 2009.
+
+\bibitem{dosovitskiy2021an}
+\BIBentryALTinterwordspacing
+A.~Dosovitskiy, L.~Beyer, A.~Kolesnikov, D.~Weissenborn, X.~Zhai, T.~Unterthiner, M.~Dehghani, M.~Minderer, G.~Heigold, S.~Gelly \emph{et~al.}, ``An image is worth 16x16 words: Transformers for image recognition at scale,'' in \emph{International Conference on Learning Representations (ICLR)}, 2021. [Online]. Available: \url{https://arxiv.org/abs/2010.11929}
+\BIBentrySTDinterwordspacing
 
 \end{thebibliography}

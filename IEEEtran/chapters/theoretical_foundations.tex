@@ -1,0 +1,116 @@
+
+
+
+
+\section{Theoretical Foundations}
+
+This chapter examines the individual components of this reasearch. It starts with a deeper look at stress and its impact on the Autonomic Nervous System, followed by a discussion on heart rate and heart rate variability. Moreover, the concept of rPPG, the mechanism of biofeedback, and the influence of music on stress regulations are investigated.
+
+\subsection{Stress and the Autonomic Nervous System}
+
+The Autonomic Nervous System (ANS) consists of the parasympathetic and the sympathetic branches. The paraympathikus system act during periods of rest and calm and regulates functions such as “rest and digest”. In contrast, the sympathetic system is activated situations in which we precive a threat. In these cases, the heart rate increases to release more energy \cite{mccorry2007physiology}.
+
+McEwen (2007) describes this as the allostatic effect. The body dynamically adjusts its internal state to meet the standards of the environment. For instance, in a life threatening situation a lot of energy is released. The short-term mobilization of energy is a protective reaction of the body. If this activation occurs chronically without enough recovery, it can lead to permenant damage (Figure \ref{fig:allostatic_load}) \cite{mcewen2017neurobiology}.
+
+Individual differences in stress perception are rooted in the brains’ ability to evaluate environmental stimuli. According to McEwen (2007), the brain exhibits significant plasticity, meaning its responses to stressors is shaped by genetics, early development, and past experiences. If an individual has for example experiences a trauma, the brain’s system may become hypersensitiv. It might trigger a ‘fight or flight’ response in harmless situations. This can lead to coping strategies, such as smoking or drinking. These coping stragies try to calm down the parasympathetic branch of the autonomic Nervous System. On the other hand, the plasticity also allows for an intervention in the other direction. The brain can be trained to shift from a threatening state to a calm state \cite{mcewen2017neurobiology}.
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.9\columnwidth]{./chapters/pictures/test.png}
+    \caption{The Figure illustrates the mechanism of allostatic load and the underlying pathways of stress perception and physiological adaption. \cite{mcewen2017neurobiology}}
+    \label{fig:allostatic_load}
+\end{figure}
+
+
+\subsection{Heart Beat and Heart Rate Variability}
+
+To understand the mechanics of stress detection, it is essential to differentiate between the quantity and the quality of heart activity. These two aspects are represented by Heart Rate (HR) and Heart Rate Variability (HRV) \cite{shaffer2017overview}.
+
+Heart Rate (HR) is defined as the total number of heartbeats per minute. It acts as a measure of how fast the heart is beating at any given moment. It remains a relatively coarse metric. For instance, in an office environment, HR often stays within a specific range, as there is not enough physical activity. This can make it an insensitive marker for subtle cognitive loads or early-stage stress \cite{shaffer2017overview}.
+
+Heart Rate Variability (HRV), on the other hand, focuses on the smaller level of cardiac timing. It describes  the fluctuation in the time intervals between two heartbeats. This is defined as Interbeat Intervals (IBIs). HRV consists of the constant changes in these time intervals from one beat to the next \cite{shaffer2017overview}.
+
+From a physiological standpoint, a healthy biological system requires to be highly adaptable. This means that a healthy heart does not maintain a perfectly rigid or identical time between intervals. Instead, the autonomic nervous system constantly changes the timing of each beat to respond to internal and external demands \cite{shaffer2017overview}.
+
+% hier vielleicht noch ein wenig kürzer das ist schon sehr viel text (hier nochmal nach AI schauen)
+If the intervals between heartbeats become too consistent and lose this natural irregularity, it is often a clinical sign of physiological strain or a lack of regulatory flexibility. High variability indicates that the body is in a state of balance and can rapidly adjust to stressors. Therefore, while HR measures the quantity of beats, HRV reflects the quality and efficiency of the autonomic nervous system’s control over the cardiovascular system \cite{shaffer2017overview}.
+
+
+\subsection{Remote Photoplethysmography (rPPG)}
+
+To measure the heart beat and the heart beat variability a technology called remote Photoplethysmography can be employed.
+
+\subsubsection{The foundations of rPPG}
+
+The foundational work for modern remote photoplethysmography (rPPG) was made by Verkruysse et al. (2008), who demonstrated that the heart beat could be monitored using a standard digital camera. This relies on the fact that hemoglobin absords light differently than the surrounding body tissue. As the blood volume changes in the body with every heartbeat, the intensity of the reflected light varies. Their research identified that the green color channel contains the strongest information regarding the heart beat (Figure \ref{fig:blood_frequencies}). Despite the successful proof-of-concept, two challenges were highlighted: Motion artifcats caused by movement and  noise due to the camera's sensor \cite{verkruysse2008remote}.
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.9\columnwidth]{./chapters/pictures/blood_frequencies.png}
+    \caption{Spectral sensitivity of the PPG signal. Green light exhibits the highest amplitude, making it the most reliable channel for non-contact heart rate monitoring. \cite{dehaan2013chrom}}
+    \label{fig:blood_frequencies}
+\end{figure}
+
+\subsubsection{Evolution: From Classic Algorithms to AI-based Detection}
+
+Following the initial proof-of-concept, a significant increase in rPPG research was observed, particularly after 2017. This trend is closely linked to the rapid improvements in Artificial Intelligence (AI) and Deep Learning. A recent meta-analysis revealed that in 2025 82.05\% \cite{Debnath25} of papers about rPPG technology used an approach with artificial intelligence. A major problem is the availability of diverse, large-scale datasets. The available sets only have data of people from North America, Europe and China. This leads to a huge underrepresentation of various age groups and diverse skin tones \cite{Debnath25}.
+
+
+\subsubsection{Tradtional Frameworks and Region of Interest (ROI)}
+
+Traditional rPPG frameworks typically follow a multi-stage process. First, the face is detected and tracked, often using the Viola-Jones algorithm or similar cascade classifiers to define a Region of Interest (ROI). Then methods such as Principal component Analysis (PCA) or Independet Component Analysis (ICA) or employed to isolate the pulse signal from the green color channel. While effective if the person remains still, these approaches struggle with motion artifacts, as they require several seconds of stable data to compute the signal components \cite{Debnath25}.
+
+While traditional frameworks rely on fixed mathematical models, modern approaches increasingly replace stages of the rPPG pipeline with Deep Learning modules. This is done in the area of face detection and tracking. The Viola-Jones algorithm often struggles with varying lighting conditions and extreme head poses. Current systems frequently utilize more robust AI-based detectors \cite{Debnath25}.
+
+Furthermore, the region of interest (ROI) significantly impact the accuracy of the heart rate. Although, early studies often used the entire facial area, recent studies recommend using a small rectangular area at the forhead for better results \cite{Debnath25}.
+
+\subsubsection{Chrom approach}
+
+The Chrominance-based method (CHROM) introduced a physicsbased alternative. It solves the big challenge of subject motion, when calculating the heart beat. Periodic movements can render simple intensity-based selections useless. Furthermore, while many algorithms require long observation intervals to achieve sufficient frequency resolution, CHROM is designed to be highly efficient. Similarly to traditional methods like PCA or ICA, the chrom algorithm also uses the fact that the blood absorb a large percentage of green light. Additionally it analyzes how the light is reflected on the human skin. According to the dichromatic reflection model this reflection has a Specular and a Diffused Component (Figure \ref{fig:chrom_light}). Only the diffuse Reflexion enters the skin and has the color of the blood. The specular reflexion does not enter the skin. It is just reflected on the surface and thus does not contain any information about the blood. This specular part is an additive value and thus the division of the two  color channels does not cancel this effect out. Thereforce, a subtraktive approach is used \cite{dehaan2013chrom}.
+
+$$(R + noise) - (G + noise) = R - G$$
+
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.9\columnwidth]{./chapters/pictures/chrom_light.png}
+    \caption{The illustration depicts light reflection on the skin \cite{dehaan2013chrom}}
+    \label{fig:chrom_light}
+\end{figure}
+
+The CHROM algorithm projects the normalized RGB signals into two orthogonal chrominance signals, $X$ and $Y$. In a perfect environment under white light, these signals are mathematically independent. Based on empirical data from a diverse set of subjects, de Haan and Jeanne derived the standardized projection vectors $[0.7682, 0.5121, 0.3841]$, leading to the core transformations:
+
+$$X_s = 3R_n - 2G_n$$
+
+$$Y_s = 1.5R_n + G_n - 1.5B_n$$
+
+To further refine the pulse signal $S$, these components are combined using the ratio of their standard deviations ($\alpha$):
+
+$$S = X_s - \alpha \cdot Y_s \quad where \quad \alpha = \frac{\sigma(X_s)}{\sigma(Y_s)}$$
+
+Even after projection, the signal $S$ may contain a slow "drift" caused by respiration or minor posture changes. To isolate the cardiac signal, a Bandpass Filter is applied. The filter is typically tuned to a range of 0.7 Hz to 4.0 Hz, which corresponds to a human heart rate between 42 and 240 BPM. Frequencies outside this window are discarded as non-physiological noise.To extract the final heart rate, a Fast Fourier Transform (FFT) is performed on the filtered signal. The FFT shifts the data from the time domain to the frequency domain, resulting in a power spectrum. The algorithm identifies the "dominant peak" (the highest frequency component) in this spectrum. For instance, a peak at 1.2Hz is converted to the final pulse rate:
+
+$$1.2 Hz \times 60 seconds = 72 BPM$$
+
+
+One of the most significant advantages of CHROM is its temporal efficiency. While traditional BSS methods (Blind Source Separation) like ICA or PCA often require up to 30 seconds of data to stabilize, CHROM utilizes an Overlap-Add (WOLA) procedure. By using overlapping windows of only 1.6 seconds, the system provides a continuous, near-instantaneous pulse estimate.
+
+In comparative studies, the robustness of CHROM is evident. CHROM has a high stationary accuracy and predictes the correct pulse with a 98\% accuracy. It has a 92\% correlation with the medical-grade contact sensor. Furthermore, it is resilient against motion. Under havey motion (e.g., on a fitness stepper), maintains a 48\% success rate. ICA and PCA fail significantly, and only reach 4\% and 11\%. Moreover, CHROM can also process different skin tones. Darker Skin Tones naturally lower the Signal-to-Noise Rratio because the absord more light. Chrom remains the most robust classical algorithm across all phenotypes.
+
+\subsubsection{Modern Deep Learning Paradigms}
+
+With the rapid advancement in artificial intelligence, modern rPPG systems have shifted towards end-to-end models. These architectures can process raw data or image sequences to estimate heart rate directly, often without the need for manual face isolation or region of intrest  selection. There are three architectural paradigms: Convolutional Neural Networks (CNNs), Hybrid Neural Networks and Transformed-based architectures \cite{Debnath25}.
+
+In modern rPPG systems, Convolutional Neural Networks (CNNs) are the standard for processing image data. These networks consist of several layers, mainly an input, an output, and various hidden layers like convolutional and pooling layers. Their main task is to recognize the very subtle color changes in the skin pixels that happen during a cardiac cycle \cite{Debnath25}.
+
+A big problem in this field, is that there aren't enough large and diverse datasets to train these models from scratch. Because of this, researchers often use Transfer Learning \cite{Debnath25}. The idea here is to take a model that was already trained on a different task, such as general face recognition. By 'freezing' the first layers and only fine-tuning the last ones with rPPG-specific data, the model can use its existing knowledge of facial features. This approach makes it possible to get good results even with smaller datasets and saves a lot of training time \cite{pan2009survey}.
+
+In addition, a different category of neural networks has emerged: Hybrid Neural Networks. These combine different neural networks like CNNs, RNNs and autoencoders to form a more robust system \cite{Debnath25}.
+
+In the past years powerful Large Language Models (LLMS) like ChatGPT have emerged that use transformers to understand words and sentences. The same technique can be employed to analyze pictures. The picture is broken up into small rectangular patches, which the network analyzes in relation to one another \cite{dosovitskiy2021an}. By Comparing different regions simultaneously, the transformer is able to differentiate between the heart beat and noise, such as micro-movements. This leads to a more robust heart rate estimation \cite{Debnath25}.
+
+
+\subsubsection{Summary of rPPG Frameworks}
+There are lot of different approaches to calculate the heartbeat with an rPPG technique.
+Modern Deep Learning Algorithms have emerged in the recent years. They show promising results, although there are not enough diverse datasets. The CHROM Algorithms is promising for a realtime evaluation of data. Traditionally algorithms like PCA are slow and not so precise.
+Although, there has been a huge advancement in the past years, there are still no long-term studies that monitor the heart beat over several hours. Most researches only test rPPG for a short time, which does not show how it works in real daily life \cite{Debnath25}.
