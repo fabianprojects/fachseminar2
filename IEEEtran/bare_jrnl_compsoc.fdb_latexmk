@@ -1,25 +1,26 @@
 # Fdb version 4
-["bibtex bare_jrnl_compsoc"] 1775734975.20904 "bare_jrnl_compsoc.aux" "bare_jrnl_compsoc.bbl" "bare_jrnl_compsoc" 1775735187.20653 0
-  "./literatur.bib" 1775723434 11178 10aace1ea3307ee1c3a5da81403beb0e ""
-  "bare_jrnl_compsoc.aux" 1775735185 5169 66537cddaf58443b4b89c2046dbb34b6 "pdflatex"
+["bibtex bare_jrnl_compsoc"] 1775833077.84921 "bare_jrnl_compsoc.aux" "bare_jrnl_compsoc.bbl" "bare_jrnl_compsoc" 1775833081.8832 0
+  "./literatur.bib" 1775832789 10861 5ad7fe044bfbc2d658c87d21a0f4cfd0 ""
+  "bare_jrnl_compsoc.aux" 1775833080 6182 3a5cabcf23fd2350b18c43f77a745b91 "pdflatex"
   "f:/programme/texlive/2025/texmf-dist/bibtex/bst/ieeetran/IEEEtran.bst" 1760693413 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
   (generated)
   "bare_jrnl_compsoc.bbl"
   "bare_jrnl_compsoc.blg"
   (rewritten before read)
-["pdflatex"] 1775735183.48776 "f:/Studium/05_2024-Sommersemester/Fachseminar/Fachseminar PO18 Informationen/Computer_Society_LaTeX_template_test/IEEEtran/bare_jrnl_compsoc.tex" "bare_jrnl_compsoc.pdf" "bare_jrnl_compsoc" 1775735187.20816 0
+["pdflatex"] 1775833078.45871 "f:/Studium/05_2024-Sommersemester/Fachseminar/Fachseminar PO18 Informationen/Computer_Society_LaTeX_template_test/IEEEtran/bare_jrnl_compsoc.tex" "bare_jrnl_compsoc.pdf" "bare_jrnl_compsoc" 1775833081.88485 0
   "IEEEtran.cls" 1775630232 288304 5b2e4fa15b0f7eabb840ebf67df4c0f7 ""
-  "bare_jrnl_compsoc.aux" 1775735185 5169 66537cddaf58443b4b89c2046dbb34b6 "pdflatex"
-  "bare_jrnl_compsoc.bbl" 1775734975 4208 effbfd969a825f9ce951b70470e83122 "bibtex bare_jrnl_compsoc"
-  "bare_jrnl_compsoc.out" 1775735185 3168 7f351878d588b5af02adb2e7ffd9c2a6 "pdflatex"
-  "bare_jrnl_compsoc.tex" 1775718207 23409 47c0872a7d304ecaa1f30e5609882236 ""
+  "bare_jrnl_compsoc.aux" 1775833080 6182 3a5cabcf23fd2350b18c43f77a745b91 "pdflatex"
+  "bare_jrnl_compsoc.bbl" 1775833078 5021 2aef1a6d26d417dcbbe094010a84fde5 "bibtex bare_jrnl_compsoc"
+  "bare_jrnl_compsoc.out" 1775833080 4224 147a1b5b74f2afc4c2ee11aec8a5be4d "pdflatex"
+  "bare_jrnl_compsoc.tex" 1775832776 23448 7bac9d460db15ece7e64ea6749fa8035 ""
+  "chapters/case_studies.tex" 1775833073 2168 02a2829d25af5482afc13a90c789019c ""
   "chapters/conclusion.tex" 1775715161 78 6b87ceb6b6f9f2d0a734563abf5de8e4 ""
   "chapters/introduction.tex" 1775715261 2991 bffe4a4026b13bd3df62be3ff9fae277 ""
   "chapters/pictures/blood_frequencies.png" 1774964458 47716 2d6f3d6dd242fdfd7980b64181dec026 ""
   "chapters/pictures/chrom_light.png" 1775724352 73447 a26aae31def21c7f986eb901b8dc7bb0 ""
   "chapters/pictures/test.png" 1775541598 501844 5b8433c033dba226e011358122457a55 ""
-  "chapters/theoretical_foundations.tex" 1775735182 18764 69ff694d228401d681036cdd286386e4 ""
-  "f:/Studium/05_2024-Sommersemester/Fachseminar/Fachseminar PO18 Informationen/Computer_Society_LaTeX_template_test/IEEEtran/bare_jrnl_compsoc.tex" 1775718207 23409 47c0872a7d304ecaa1f30e5609882236 ""
+  "chapters/theoretical_foundations.tex" 1775831109 20060 bbe3df0510778771262a2c55f64be643 ""
+  "f:/Studium/05_2024-Sommersemester/Fachseminar/Fachseminar PO18 Informationen/Computer_Society_LaTeX_template_test/IEEEtran/bare_jrnl_compsoc.tex" 1775832776 23448 7bac9d460db15ece7e64ea6749fa8035 ""
   "f:/programme/texlive/2025/texmf-dist/fonts/enc/dvips/base/8r.enc" 1760692351 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "f:/programme/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1760692857 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "f:/programme/texlive/2025/texmf-dist/fonts/tfm/adobe/helvetic/phvb7t.tfm" 1760693228 2240 eb56c13537f4d8a0bd3fafc25572b1bd ""

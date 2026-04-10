@@ -218,6 +218,9 @@ INPUT ./chapters/pictures/chrom_light.png
 INPUT ./chapters/pictures/chrom_light.png
 INPUT ./chapters/pictures/chrom_light.png
 INPUT ./chapters/pictures/chrom_light.png
+INPUT ./chapters/case_studies.tex
+INPUT ./chapters/case_studies.tex
+INPUT chapters/case_studies.tex
 INPUT ./chapters/conclusion.tex
 INPUT ./chapters/conclusion.tex
 INPUT chapters/conclusion.tex

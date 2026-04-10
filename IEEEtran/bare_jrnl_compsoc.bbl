@@ -66,4 +66,15 @@ L.~Bernardi, C.~Porta, and P.~Sleight, ``Cardiovascular, cerebrovascular, and re
 I.~Bergstrom, S.~Seinfeld, J.~Arroyo-Palacios, M.~Slater, and M.~V. Sanchez-Vives, ``Using music as a signal for biofeedback,'' \emph{International Journal of Psychophysiology}, vol.~93, no.~1, pp. 140--149, 2014. [Online]. Available: \url{https://doi.org/10.1016/j.ijpsycho.2013.04.013}
 \BIBentrySTDinterwordspacing
 
+\bibitem{lehrer2014heart}
+P.~M. Lehrer and R.~Gevirtz, ``Heart rate variability biofeedback: how and why does it work?'' \emph{Frontiers in Psychology}, vol.~5, p. 756, 2014.
+
+\bibitem{bishop2004mindfulness}
+S.~R. Bishop, M.~Lau, S.~Shapiro, L.~Carlson, N.~D. Anderson, J.~Carmody, Z.~V. Segal, S.~Abbey, M.~Speca, D.~Velting \emph{et~al.}, ``Mindfulness: A proposed operational definition,'' \emph{Clinical Psychology: Science and Practice}, vol.~11, no.~3, pp. 230--241, 2004.
+
+\bibitem{yu2018unwind}
+\BIBentryALTinterwordspacing
+B.~Yu, M.~Funk, J.~Hu, and L.~Feijs, ``Unwind: a musical biofeedback for relaxation assistance,'' \emph{Behaviour \& Information Technology}, vol.~37, no.~8, pp. 800--814, 2018. [Online]. Available: \url{https://doi.org/10.1080/0144929X.2018.1484515}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}
