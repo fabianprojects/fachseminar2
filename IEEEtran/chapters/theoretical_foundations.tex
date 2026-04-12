@@ -65,7 +65,89 @@ While traditional frameworks rely on fixed mathematical models, modern approache
 Furthermore, the region of interest (ROI) significantly impact the accuracy of the heart rate. Although, early studies often used the entire facial area, recent studies recommend using a small rectangular area at the forhead for better results \cite{Debnath25}.
 
 
-\subsection{Principal Component Analysis}
+\subsection{Blind Source Separation}
+
+The fundamental problem in rPPG is that the recorded RGB channels do not only contain the pulse information but also significant noise in the form of light changes and movement. The challenge is that this noise has to be separated from the real physiological information. Mathematically speaking, the resulting color channels are treated as a linear mixture \cite{poh2010non} :
+
+$$x(t) = As(t)$$
+
+The goal is to find a demixing matrix $W$, so that the original source signals $\hat{s}(t) = Wx(t)$ can be calculated. To find $W$, it is important to search for statistical independence between the sources. For that, the JADE algorithm (Joint Approximate Diagonalization of Eigenmatrices) is used. Unlike deterministic methods, JADE is an iterative process that tries out different combinations to maximize non-Gaussianity, which results in a higher computational load and increased latency (Figure \ref{fig:color_channels}) \cite{poh2010non}.
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.9\columnwidth]{./chapters/pictures/color_channels.png}
+    \caption{Seperation of color channels \cite{poh2010non}}
+    \label{fig:color_channels}
+\end{figure}
+
+
+For the initial localization, the Viola-Jones algorithm is used to detect the face. In this specific setup, only 60\% of the bounding box width is used as the Region of Interest (ROI). The raw signals from this ROI are then spatially averaged and normalized using Zero-Mean and Unit-Variance to balance different channel intensities \cite{poh2010non}.
+
+After the independent components are recovered, the pulse is extracted by using the Fast Fourier Transform (FFT). An operational range from [0.75 - 4.0] Hz is allowed, because this corresponds to 45 - 240 BPM, the range a human pulse usually lies in. Additionally, a temporal consistency threshold is implemented: a jump of only 12 BPM is allowed between consecutive measurements (taken 1 s apart). Anything different is rejected as noise or an artifact. The highest power peak within the frequency spectrum is chosen as the final heart rate \cite{poh2010non}.
+
+To compare the accuracy of this methodology to a gold standard (like a finger BVP sensor), Bland-Altman plots are used. These plots show that ICA can significantly reduce the Root Mean Squared Error (RMSE) from 19 BPM to about 4.6 BPM even when the subject is moving \cite{poh2010non}.
+
+However, there are physical limitations to consider. According to the Beer-Lambert Law, the way light travels through and is absorbed by blood vessels is technically non-linear. But for the sake of computation, ICA uses a linear approximation, which works well for short time windows (e.g., 30s). The system is also highly dependent on the ambient lumination; if it is too dark, the SNR drops too low for a reliable measurement \cite{poh2010non}.
+
+Another risk is the "Component Picking" problem. In this study, the second independent component is usually chosen as the pulse signal because hemoglobin absorptivity is highest in the green spectrum. However, this fixed selection could be wrong if the noise is too strong. Finally, it is noted that using simple webcams is much more cost-effective than using expensive thermal cameras, and the software-based approach even allows for the simultaneous detection of multiple people in one frame \cite{poh2010non}.
+
+
+% hier umschreiben
+% iterative functions are used to maximize or minimize a given cost function that measures non-Gaussiannity
+
+% at the end fast Fourier transform (FFT)
+
+% operational range to [0.75, 4]
+
+% threshold for maximum change in pulse rate between successive measurements maximum threshold of 12
+
+% cardiovascular pulse wave was clearly visible in the second component
+
+% false positive and false negative was 0\%
+
+
+% free to move their head or body slowly while remaining seated
+
+
+% simultaneous heart rate measurements
+
+% ICA(30s ) used
+% linear model should provide a reasonable local approximation -> the results confirm that removing noise in these situations
+
+% primary use of this methodology likely to be in a home environment
+
+% jeder farbsensor (RGB) nimmt eine Mischung aus dem Puls und Störquellen auf (Licht, Bewegung) aufnimmt
+
+% es wird der Jade algorithmus benutzt -> hier wird viel ausprobiert und daher hat man eine höhere rechenzeit
+
+% Viola-Jones Algorithmus
+
+% Zero-Mean / Unit-Variance Normalisierung -> damit die unterschiedlichen Helligkeiten der Farbkanäle die ICA nicht verfälschen
+
+% ICA gibt drei Kanäle zurück, weiß aber nicht welcher der Puls ist, Meistens ist es die zweite Komponente
+
+% Fast Fourier Transformation (FFT) wird genutzt, um vom Zeitsignal in das Frequenzspektrum zu kommen -> 0,75HZ bis 4HZ Alles unter 45 BPM
+% -> algorithmus sucht den höchsten peak in diesem bereich
+
+% noise manchmal springt das system es wird ein limit gesetzt für die maximalen sprünge
+
+% bland altman plots fehler wird von 6BPM auf 2.29BPM reduziert.
+
+% das licht reist unterschiedlich tief in das Gewebe ein (Beer-Lambert-Gesetz) -> eignetlich ein nicht linearer Prozess. (ICA) geht von einer linearen mischung aus
+
+% lineare Annäherung von 30s oder 5s reichen tehcnisch aus, um präzise ERgebnisse zu liefern.
+
+% Vergleich mit Wärmebildkamera -> läuft auf jedem Laptop
+
+% sie wissen nicht ob das System im Dunklen funktioniert
+
+% man weiß nicht welche komponente die grüne farbkomponente ist.
+
+
+
+
+
+
 
 
 
@@ -121,6 +203,90 @@ In the past years powerful Large Language Models (LLMS) like ChatGPT have emerge
 There are lot of different approaches to calculate the heartbeat with an rPPG technique.
 Modern Deep Learning Algorithms have emerged in the recent years. They show promising results, although there are not enough diverse datasets. The CHROM Algorithms is promising for a realtime evaluation of data. Traditionally algorithms like PCA are slow and not so precise.
 Although, there has been a huge advancement in the past years, there are still no long-term studies that monitor the heart beat over several hours. Most researches only test rPPG for a short time, which does not show how it works in real daily life \cite{Debnath25}.
+
+
+\subsection{sonification}
+
+% To create sound out from a heart beat, a transformation is required. This is defiend as sonification. According to Hermann (2008) this is a systematic transformation of data relations into acoustic signals. The purpose is information communication. Four conditions have to be met for this transformation: It has to be objective, be based on a systematic transformation, to be reproducible and be applicable to different datasets \cite{hermann2008taxonomy}.
+
+Dubus et al. (2013) performed a systematic review on sonification. They mention that sonification can enhance the perception of one's own body and is therefore widely used in rehabilitation and training. Among different sonification techniques, parameter mapping is especially promising because it allows for continuous transmission of information. In this process, a certain set of mappings between "physical dimensions" and "auditory dimensions" is defined \cite{dubus2013systematic}.
+
+% heir dann noch die quellenangabe raus nehmen aus [50]
+To establish these mappings, a three-stage process is required. First, the specific auditory dimensions to be used must be identified, such as pitch or timbre. Then the polarity has to be defined. This determines the direction in which the auditory dimension changes according to the data. For instance, if the heart rate increases, it must be decided whether the pitch should increase or decrease. Finally, the psychophysical scaling has to be addressed. Since humans perceive changes in sound non-linearly, it is necessary to define the magnitude of the auditory change relative to the data change \cite{dubus2013systematic} \cite{walker2000psychophysical}.
+
+According to Dubus and Bresin (2013), many sonification approaches implement a strategy called "ecological perception". This means that certain sonification principles are part of our subconscious mind. This applies, for example, to loudness, which can be explained by the inverse distance law: a decrease in sound intensity is naturally associated with an increasing distance from a source. Such natural associations are deeply ingrained in human perception and should be prioritized when employing a sonification approach \cite{dubus2013systematic}.
+
+Research has shown which auditory dimensions are preferred in specific fields. For the dimension "Time", timbre is often used, whereas loudness is used less frequently. In the category of "Kinetics", which describes energy or force, loudness is the most common mapping. These categories are particularly relevant when sonifying the human heartbeat. Furthermore, in real-time sonification, a mapping from "instant to instant" occurs, meaning the rhythm of the underlying data source is directly incorporated into the auditory output. Additionally, data related to horizontality is more often depicted through spatialization, while vertical data is frequently sonified through pitch \cite{dubus2013systematic}.
+
+Furthermore, it is pointed out that the sonic material is decisive. If the sounds make the user uncomfortable, this can have drastic consequences for the effectiveness of the system. Therefore, the use of sample-based displays is often preferred over simple synthetic tones \cite{dubus2013systematic}.
+
+In addition, it is important to investigate the chosen sonification strategy scientifically. The study highlights that many approaches are currently chosen in an ad hoc or arbitrary manner without verifying their effectiveness through objective tests \cite{dubus2013systematic}.
+
+
+% pitch is most used
+% sonification is great to feel the own body
+% great for rehabilitation and training
+
+% different sonification techniques
+% audification, parameter mapping
+
+% parameter mapping is widely used
+% information is transmitted in a continous matter
+
+% parameter mapping: three stages
+% choice of mapping strategy (which auditory dimension to use to represent a specific data dimnesion)
+
+% choice of polarity
+% choice psychological scaling
+
+% Hypothesis 1. A large proportion of sonification mappings
+% follow the logic of ecological perception. Mappings are often
+% performing a sort of simulation of underlying physical phenomena,
+% which can be implemented either directly or metaphorically.
+% These natural associations between sound and its meaning
+% regarding physics were called ‘‘universal relationships’’ by Hermann
+% and Ritter [69] and depicted as ‘‘deeply engrained in the way we —
+% usually subconsciously — pick up meaning from sound events’’ -> sound funktioniert am besten wenn es ökologisch ist
+
+% All the other (i.e. not involving Pitch) mappings but one
+% correspond to natural perceptual associations, which supports
+% Hypothesis 1.
+
+% Loudness can be explained by the inverse distance law: damping of sound waves in the transmission medium (e.g. air)
+% leads to a decrease of sound intensity that is proportional to the
+% distance to the sound source, and therefore to a decrease of
+% loudness.
+
+% Benutzte auditory dimensions: Loudness, Duration, Spatialization
+
+% Dimension Time: Klangfarbe wird oft genutzt, Lautstärke eher weniger und Spatial eigentlich nie  (Sound der denn Klang heller dumpfer macht genutzt)
+
+% Kinetics -> Herzrate als Anspannugn oder als Energie Kinetics es wird oft Laustärke genutzt
+
+% Pitch ist für alle Daten möglich
+
+% Spatial sachen werden selbst in profi projekten nie bentuzt und sind daher nicht nötig
+
+% mapping from instant to instant -> durch den herzschlag hat man automatisch schon den rhythmus den herzes in dem song drinne
+
+% oft werden die sonification strategies nicht wissenschaftlich getestet sondern es wird einfach ein wenig random gemacht
+
+% We can observe that physical dimensions
+% related to horizontality are most often sonified through Spatialization, while those related to verticality are most often sonified via
+% changes in Pitch.
+
+% das projekt würde zur kategorie monitoring gehören
+
+% die art des klangmaterials ist entscheidenend und kann das experimetn maßgeblich beieinflussen
+
+% Sample-based displays
+
+% die meisten projekte nutzen natürliche assoziationen
+
+
+
+
+
 
 \subsection{Mapping of heart beat to music}
 

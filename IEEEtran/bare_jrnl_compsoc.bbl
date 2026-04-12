@@ -41,6 +41,9 @@ G.~de~Haan and V.~Jeanne, ``Robust pulse rate from chrominance-based rppg,'' \em
 \bibitem{Debnath25}
 U.~Debnath and S.~Kim, ``A comprehensive review of heart rate measurement using remote photoplethysmography and deep learning,'' \emph{BioMedical Engineering OnLine}, vol.~24, no.~1, p.~73, 2025.
 
+\bibitem{poh2010non}
+M.-Z. Poh, D.~J. McDuff, and R.~W. Picard, ``Non-contact, automated cardiac pulse measurements using video imaging and blind source separation,'' \emph{Optics Express}, vol.~18, no.~10, pp. 10\,762--10\,774, 2010.
+
 \bibitem{pan2009survey}
 S.~J. Pan and Q.~Yang, ``A survey on transfer learning,'' \emph{IEEE Transactions on Knowledge and Data Engineering}, vol.~22, no.~10, pp. 1345--1359, 2009.
 
@@ -48,6 +51,12 @@ S.~J. Pan and Q.~Yang, ``A survey on transfer learning,'' \emph{IEEE Transaction
 \BIBentryALTinterwordspacing
 A.~Dosovitskiy, L.~Beyer, A.~Kolesnikov, D.~Weissenborn, X.~Zhai, T.~Unterthiner, M.~Dehghani, M.~Minderer, G.~Heigold, S.~Gelly \emph{et~al.}, ``An image is worth 16x16 words: Transformers for image recognition at scale,'' in \emph{International Conference on Learning Representations (ICLR)}, 2021. [Online]. Available: \url{https://arxiv.org/abs/2010.11929}
 \BIBentrySTDinterwordspacing
+
+\bibitem{dubus2013systematic}
+G.~Dubus and R.~Bresin, ``A systematic review of mapping strategies for the sonification of physical quantities,'' \emph{PLoS ONE}, vol.~8, no.~12, p. e82491, 2013.
+
+\bibitem{walker2000psychophysical}
+B.~N. Walker, G.~Kramer, and D.~M. Lane, ``Psychophysical scaling of sonification mappings,'' in \emph{Proceedings of the International Conference on Auditory Display (ICAD 2000)}, 2000, pp. 1--6.
 
 \bibitem{pelletier2004effect}
 C.~L. Pelletier, ``The effect of music on decreasing arousal due to stress: A meta-analysis,'' \emph{Journal of Music Therapy}, vol.~41, no.~3, pp. 192--214, 2004.

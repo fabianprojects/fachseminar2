@@ -1,0 +1,17 @@
+\section{argumentation}
+
+In this chapter, the final argumentation for the closed-loop system is presented. It discusses whether a camera-based approach using rPPG combined with musical biofeedback is effective for stress reduction and the regulation of consciousness.
+
+First and foremost, stress in this context is defined as the activation of the sympathetic nervous system and the corresponding withdrawal of the parasympathetic branch. These physiological shifts directly affect heart activity. While physical activity is best tracked via heart rate (HR), situations in which the user is sitting still or not moving significantly require the analysis of Heart Rate Variability (HRV) to accurately quantify stress. Consequently, a comprehensive system must be capable of addressing both states.
+
+Both aspects can be effectively monitored using an rPPG approach. For real-time feedback, it is crucial that the underlying algorithms are computationally efficient. Furthermore, the system must remain robust against motion artifacts. In daily life, users do not remain perfectly still for extended periods; therefore, the CHROM algorithm is ideally suited for this use case. It is fast to calculate as it leverages the standardized optical properties of human skin, and it has been proven to be resilient against motion changes. In contrast, other methods such as PCA or ICA often require longer observation windows for an initial measurement or demand significant hardware resources. Deep Learning approaches frequently require a dedicated GPU and struggle with real-time processing, as they often need to analyze both past and future frames of a video sequence. Additionally, these networks are often trained on datasets that lack a sufficient variety of skin tones. This leads to the conclusion that a CHROM-based approach is best suited for this application.
+
+In the next step, this physiological data must be converted into musical biofeedback. The music must be enjoyable to the user to prevent listening fatigue while also avoiding boredom. Passive listening alone is generally not successful in lowering stress; the user's intention is far more critical. The user must actively intend to lower their stress levels and gain better conscious awareness. A continuous mapping process is necessary to provide the user with immediate feedback regarding their own body.
+
+The "Unwind" system successfully utilized nature sounds, such as wind noises, to imitate breathing patterns. Furthermore, an organic soundscape can be used to reflect the participant's arousal level. This follows the principle of "ecological perception" according to Dubus and Bresin (2013): if the body is calm, the soundscape reflects this tranquility.
+
+Additionally, case studies involving the "Muse" headband have demonstrated that biofeedback can effectively increase conscious awareness and mitigate anxious thoughts. Biofeedback serves as an "anchor," preventing the user from ruminating on distracting or stressful thoughts. This process also enables various health-promoting mechanisms through biofeedback-driven regeneration. The respiratory and cardiovascular systems are synchronized, and when this resonance frequency is reached, the body functions at its optimum. This stimulates the vagus nerve, making it possible to further lower stress levels and promote long-term recovery.
+
+
+
+
