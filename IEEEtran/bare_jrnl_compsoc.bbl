@@ -41,6 +41,12 @@ G.~de~Haan and V.~Jeanne, ``Robust pulse rate from chrominance-based rppg,'' \em
 \bibitem{Debnath25}
 U.~Debnath and S.~Kim, ``A comprehensive review of heart rate measurement using remote photoplethysmography and deep learning,'' \emph{BioMedical Engineering OnLine}, vol.~24, no.~1, p.~73, 2025.
 
+\bibitem{lempe2013roi}
+G.~Lempe, S.~Zaunseder, T.~Wirth, S.~Eck, and H.~Malberg, ``Roi selection for remote photoplethysmography,'' in \emph{2013 International Conference on Information Technology and Applications in Biomedicine (ITAB)}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2013, pp. 1--4.
+
+\bibitem{li2014remote}
+X.~Li, J.~Chen, G.~Zhao, and M.~Pietik{\"a}inen, ``Remote heart rate measurement from face videos under realistic situations,'' \emph{IEEE Transactions on Biomedical Engineering}, vol.~61, no.~6, pp. 1505--1513, 2014.
+
 \bibitem{poh2010non}
 M.-Z. Poh, D.~J. McDuff, and R.~W. Picard, ``Non-contact, automated cardiac pulse measurements using video imaging and blind source separation,'' \emph{Optics Express}, vol.~18, no.~10, pp. 10\,762--10\,774, 2010.
 

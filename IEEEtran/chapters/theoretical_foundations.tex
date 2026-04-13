@@ -65,6 +65,33 @@ While traditional frameworks rely on fixed mathematical models, modern approache
 Furthermore, the region of interest (ROI) significantly impact the accuracy of the heart rate. Although, early studies often used the entire facial area, recent studies recommend using a small rectangular area at the forhead for better results \cite{Debnath25}.
 
 
+\subsubsection{ROI selection for remote photoplethysmography}
+
+% \begin{figure}[!ht]
+%     \centering
+%     \includegraphics[width=0.9\columnwidth]{./chapters/pictures/face.png}
+%     \caption{\cite{lempe2013roi}}
+%     \label{fig:face}
+% \end{figure}
+
+The selection of the right Region of Interest (ROI) for rPPG measurements is critical for the suppression of motion and illumination artifacts. Previous approaches often utilized the entire face as a global ROI for signal extraction. However, Lempe et al. (2013) demonstrated that the signal quality varies substantially across different facial areas \cite{lempe2013roi}.
+
+To quantify this, they implemented a grid layout over the face and calculated the local Signal-to-Noise Ratio (SNR) for each segment. Through this spatial analysis, they identified the cheek and forehead regions as the most promising areas for pulse extraction (Figure \ref{fig:roi}) \cite{lempe2013roi}.
+
+While the forehead provides a stable signal, it has the practical drawback of often being covered by hair (e.g., bangs). These findings highlight a significant technical challenge. The requirement for advanced segmentation and tracking algorithms that can reliably detect and follow the cheek area, even during head movements, to ensure a consistent and high-quality pulse signal \cite{lempe2013roi}.
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.9\columnwidth]{./chapters/pictures/ROI.png}
+    \caption{The quality of the rPPG signal in the face. Blue shows low activity and red hight activity \cite{lempe2013roi}}
+    \label{fig:roi}
+\end{figure}
+
+\subsubsection{direkte Landmarks}
+
+A central problem of rPPG tracking is noise due to motion and light changes. Especially in the use case of human-computer interaction, brightness changes lead to severe fluctuations of pixel values in the face; examples include watching a movie or gaming. Li et al. (2014) propose a framework to solve these issues. First of all, the Viola-Jones detector is used to get a rough estimation of the face location. Then, 66 facial landmarks are placed, and based on these landmarks, a precise mask for the region of interest (ROI) is generated. KLT (Kanade-Lucas-Tomasi) points are used to continuously track the face, ensuring it is also tracked when moved. A second important step is the correction of brightness changes. It is assumed that these changes are not only visible in the face but also in the background. The average brightness changes in both the background and the face are measured, and a normalized least mean squares (NLMS) filter is used to find the optimal coefficient to subtract background noise from the facial area. Furthermore, non-rigid movement like smiling or speaking induces changes in the skin which cannot be compensated through tracking alone. Consequently, the measurements are split into small segments, and those with a high standard deviation are discarded. The remaining signal is processed with a bandpass filter to only allow for frequencies of 0.7 to 4 Hz (42–240 BPM). This framework was tested with the sophisticated MAHNOB-HCI database and reached a low error score of 6.87\% with 527 users. Despite these achievements, there are still quite a few problems; for instance, large head movements lead to a significant loss of KLT tracker points, which results in an unstable localization of the ROI \cite{li2014remote}.
+
+
 \subsection{Blind Source Separation}
 
 The fundamental problem in rPPG is that the recorded RGB channels do not only contain the pulse information but also significant noise in the form of light changes and movement. The challenge is that this noise has to be separated from the real physiological information. Mathematically speaking, the resulting color channels are treated as a linear mixture \cite{poh2010non} :
