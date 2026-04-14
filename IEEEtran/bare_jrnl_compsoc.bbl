@@ -20,6 +20,9 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{mcewen2017neurobiology}
+B.~S. McEwen, ``Neurobiological and systemic effects of chronic stress,'' \emph{Chronic Stress}, vol.~1, p. 2470547017692328, 2017.
+
 \bibitem{verkruysse2008remote}
 W.~Verkruysse, L.~O. Svaasand, and J.~S. Nelson, ``Remote plethysmographic imaging using ambient light,'' \emph{Optics Express}, vol.~16, no.~26, pp. 21\,466--21\,475, 2008.
 
@@ -28,9 +31,6 @@ O.~M. Giggins, U.~M. Persson, and B.~Caulfield, ``Biofeedback in rehabilitation,
 
 \bibitem{mccorry2007physiology}
 L.~K. McCorry, ``Physiology of the autonomic nervous system,'' \emph{American Journal of Pharmaceutical Education}, vol.~71, no.~4, p.~78, 2007.
-
-\bibitem{mcewen2017neurobiology}
-B.~S. McEwen, ``Neurobiological and systemic effects of chronic stress,'' \emph{Chronic Stress}, vol.~1, p. 2470547017692328, 2017.
 
 \bibitem{shaffer2017overview}
 F.~Shaffer and J.~Ginsberg, ``An overview of heart rate variability metrics and norms,'' \emph{Frontiers in Public Health}, vol.~5, p. 258, 2017.
@@ -46,6 +46,11 @@ G.~Lempe, S.~Zaunseder, T.~Wirth, S.~Eck, and H.~Malberg, ``Roi selection for re
 
 \bibitem{li2014remote}
 X.~Li, J.~Chen, G.~Zhao, and M.~Pietik{\"a}inen, ``Remote heart rate measurement from face videos under realistic situations,'' \emph{IEEE Transactions on Biomedical Engineering}, vol.~61, no.~6, pp. 1505--1513, 2014.
+
+\bibitem{kartynnik2019real}
+\BIBentryALTinterwordspacing
+Y.~Kartynnik, A.~Ablavatski, I.~Grishchenko, and M.~Grundmann, ``Real-time facial surface geometry from monocular video on mobile gpus,'' in \emph{CVPR Workshop on Analysis and Modeling of Faces and Gestures (AMFG)}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2019. [Online]. Available: \url{https://arxiv.org/abs/1907.06724}
+\BIBentrySTDinterwordspacing
 
 \bibitem{poh2010non}
 M.-Z. Poh, D.~J. McDuff, and R.~W. Picard, ``Non-contact, automated cardiac pulse measurements using video imaging and blind source separation,'' \emph{Optics Express}, vol.~18, no.~10, pp. 10\,762--10\,774, 2010.

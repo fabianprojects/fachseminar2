@@ -175,7 +175,6 @@ INPUT f:/programme/texlive/2025/texmf-dist/fonts/tfm/adobe/palatino/pplrc7t.tfm
 INPUT ./chapters/theoretical_foundations.tex
 INPUT ./chapters/theoretical_foundations.tex
 INPUT chapters/theoretical_foundations.tex
-INPUT f:/programme/texlive/2025/texmf-dist/fonts/tfm/adobe/helvetic/phvb7t.tfm
 INPUT ./chapters/pictures/test.png
 INPUT ./chapters/pictures/test.png
 INPUT ./chapters/pictures/test.png
@@ -203,14 +202,15 @@ INPUT f:/programme/texlive/2025/texmf-dist/fonts/vf/adobe/palatino/pplrc7t.vf
 INPUT f:/programme/texlive/2025/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm
 INPUT f:/programme/texlive/2025/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm
 INPUT f:/programme/texlive/2025/texmf-dist/fonts/vf/adobe/palatino/pplr7t.vf
-INPUT f:/programme/texlive/2025/texmf-dist/fonts/vf/adobe/helvetic/phvb7t.vf
-INPUT f:/programme/texlive/2025/texmf-dist/fonts/tfm/adobe/helvetic/phvb8r.tfm
+INPUT f:/programme/texlive/2025/texmf-dist/fonts/tfm/adobe/helvetic/phvb7t.tfm
 INPUT f:/programme/texlive/2025/texmf-dist/fonts/tfm/adobe/helvetic/phvro7t.tfm
 INPUT ./chapters/pictures/blood_frequencies.png
 INPUT ./chapters/pictures/blood_frequencies.png
 INPUT ./chapters/pictures/blood_frequencies.png
 INPUT ./chapters/pictures/blood_frequencies.png
 INPUT ./chapters/pictures/blood_frequencies.png
+INPUT f:/programme/texlive/2025/texmf-dist/fonts/vf/adobe/helvetic/phvb7t.vf
+INPUT f:/programme/texlive/2025/texmf-dist/fonts/tfm/adobe/helvetic/phvb8r.tfm
 INPUT f:/programme/texlive/2025/texmf-dist/fonts/vf/adobe/helvetic/phvro7t.vf
 INPUT f:/programme/texlive/2025/texmf-dist/fonts/tfm/adobe/helvetic/phvro8r.tfm
 INPUT ./chapters/pictures/ROI.png
@@ -218,6 +218,11 @@ INPUT ./chapters/pictures/ROI.png
 INPUT ./chapters/pictures/ROI.png
 INPUT ./chapters/pictures/ROI.png
 INPUT ./chapters/pictures/ROI.png
+INPUT ./chapters/pictures/face_mesh.png
+INPUT ./chapters/pictures/face_mesh.png
+INPUT ./chapters/pictures/face_mesh.png
+INPUT ./chapters/pictures/face_mesh.png
+INPUT ./chapters/pictures/face_mesh.png
 INPUT ./chapters/pictures/color_channels.png
 INPUT ./chapters/pictures/color_channels.png
 INPUT ./chapters/pictures/color_channels.png
@@ -244,8 +249,6 @@ INPUT f:/programme/texlive/2025/texmf-dist/tex/latex/psnfss/ts1phv.fd
 INPUT f:/programme/texlive/2025/texmf-dist/tex/latex/psnfss/ts1phv.fd
 INPUT f:/programme/texlive/2025/texmf-dist/tex/latex/psnfss/ts1phv.fd
 INPUT f:/programme/texlive/2025/texmf-dist/fonts/tfm/adobe/helvetic/phvr8c.tfm
-INPUT f:/programme/texlive/2025/texmf-dist/fonts/vf/adobe/palatino/pplr8c.vf
-INPUT f:/programme/texlive/2025/texmf-dist/fonts/tfm/public/mathpazo/fplmr.tfm
 INPUT ./chapters/synthesis.tex
 INPUT ./chapters/synthesis.tex
 INPUT chapters/synthesis.tex
@@ -255,6 +258,8 @@ INPUT chapters/conclusion.tex
 INPUT ./bare_jrnl_compsoc.bbl
 INPUT ./bare_jrnl_compsoc.bbl
 INPUT bare_jrnl_compsoc.bbl
+INPUT f:/programme/texlive/2025/texmf-dist/fonts/vf/adobe/palatino/pplr8c.vf
+INPUT f:/programme/texlive/2025/texmf-dist/fonts/tfm/public/mathpazo/fplmr.tfm
 INPUT f:/programme/texlive/2025/texmf-dist/fonts/vf/adobe/helvetic/phvr8c.vf
 INPUT f:/programme/texlive/2025/texmf-dist/fonts/vf/adobe/palatino/pplr7t.vf
 INPUT f:/programme/texlive/2025/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm

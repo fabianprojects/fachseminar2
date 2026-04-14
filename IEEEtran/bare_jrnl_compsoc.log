@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.17)  13 APR 2026 15:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.17)  14 APR 2026 11:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -283,26 +283,21 @@ Package hyperref Info: Link coloring OFF on input line 374.
 \@outlinefile=\write3
 \openout3 = `bare_jrnl_compsoc.out'.
 
-LaTeX Font Info:    Trying to load font information for OT1+phv on input line 481.
+LaTeX Font Info:    Trying to load font information for OT1+phv on input line 487.
  (f:/programme/texlive/2025/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 )
-LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 481.
+LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 487.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <11.04124> on input line 481.
+(Font)              <11.04124> on input line 487.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7.72884> on input line 481.
+(Font)              <7.72884> on input line 487.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5.52061> on input line 481.
-LaTeX Font Info:    Trying to load font information for U+pzd on input line 481.
+(Font)              <5.52061> on input line 487.
+LaTeX Font Info:    Trying to load font information for U+pzd on input line 487.
  (f:/programme/texlive/2025/texmf-dist/tex/latex/psnfss/upzd.fd
 File: upzd.fd 2001/06/04 font definitions for U/pzd.
 ) (./chapters/introduction.tex) (./chapters/theoretical_foundations.tex
-
-
-Underfull \hbox (badness 4303) in paragraph at lines 11--12
-\OT1/ppl/m/n/9.53561 The Au-to-nomic Ner-vous Sys-tem (ANS) con-sists of
- []
 
 <./chapters/pictures/test.png, id=114, 797.22844pt x 335.00156pt>
 File: ./chapters/pictures/test.png Graphic file (type png)
@@ -316,11 +311,11 @@ Package pdftex.def Info: ./chapters/pictures/test.png  used on input line 19.
 
 ]
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <9.53561> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 43.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 40.
 <./chapters/pictures/blood_frequencies.png, id=140, 482.55281pt x 247.67531pt>
 File: ./chapters/pictures/blood_frequencies.png Graphic file (type png)
 <use ./chapters/pictures/blood_frequencies.png>
-Package pdftex.def Info: ./chapters/pictures/blood_frequencies.png  used on input line 49.
+Package pdftex.def Info: ./chapters/pictures/blood_frequencies.png  used on input line 46.
 (pdftex.def)             Requested size: 227.64894pt x 116.84201pt.
 
 
@@ -330,29 +325,34 @@ Package pdftex.def Info: ./chapters/pictures/blood_frequencies.png  used on inpu
 <./chapters/pictures/ROI.png, id=164, 702.37407pt x 214.55156pt>
 File: ./chapters/pictures/ROI.png Graphic file (type png)
 <use ./chapters/pictures/ROI.png>
-Package pdftex.def Info: ./chapters/pictures/ROI.png  used on input line 85.
+Package pdftex.def Info: ./chapters/pictures/ROI.png  used on input line 82.
 (pdftex.def)             Requested size: 227.64894pt x 69.53854pt.
-LaTeX Font Info:    Calculating math sizes for size <9.53561> on input line 99.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9.53561> on input line 99.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6.6749> on input line 99.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <4.7678> on input line 99.
 
 
-<./chapters/pictures/color_channels.png, id=171, 654.19406pt x 342.5297pt>
+<./chapters/pictures/face_mesh.png, id=171, 321.45094pt x 180.675pt>
+File: ./chapters/pictures/face_mesh.png Graphic file (type png)
+<use ./chapters/pictures/face_mesh.png>
+Package pdftex.def Info: ./chapters/pictures/face_mesh.png  used on input line 99.
+(pdftex.def)             Requested size: 227.64894pt x 127.95758pt.
+LaTeX Font Info:    Calculating math sizes for size <9.53561> on input line 109.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9.53561> on input line 109.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6.6749> on input line 109.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <4.7678> on input line 109.
+<./chapters/pictures/color_channels.png, id=177, 654.19406pt x 342.5297pt>
 File: ./chapters/pictures/color_channels.png Graphic file (type png)
 <use ./chapters/pictures/color_channels.png>
-Package pdftex.def Info: ./chapters/pictures/color_channels.png  used on input line 105.
+Package pdftex.def Info: ./chapters/pictures/color_channels.png  used on input line 115.
 (pdftex.def)             Requested size: 227.64894pt x 119.19205pt.
 
 
-[3 <./chapters/pictures/ROI.png> <./chapters/pictures/color_channels.png>]
-<./chapters/pictures/chrom_light.png, id=192, 351.56343pt x 242.40562pt>
+[3 <./chapters/pictures/ROI.png> <./chapters/pictures/face_mesh.png> <./chapters/pictures/color_channels.png>]
+<./chapters/pictures/chrom_light.png, id=201, 351.56343pt x 242.40562pt>
 File: ./chapters/pictures/chrom_light.png Graphic file (type png)
 <use ./chapters/pictures/chrom_light.png>
-Package pdftex.def Info: ./chapters/pictures/chrom_light.png  used on input line 192.
+Package pdftex.def Info: ./chapters/pictures/chrom_light.png  used on input line 202.
 (pdftex.def)             Requested size: 227.64894pt x 156.96257pt.
 
 
@@ -362,13 +362,16 @@ Package pdftex.def Info: ./chapters/pictures/chrom_light.png  used on input line
 
 
 
-[5]) (./chapters/case_studies.tex
+[5]
 
+) (./chapters/case_studies.tex
+
+[6]
 LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 19.
-(f:/programme/texlive/2025/texmf-dist/tex/latex/psnfss/ts1ppl.fd
+ (f:/programme/texlive/2025/texmf-dist/tex/latex/psnfss/ts1ppl.fd
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 )
-<./chapters/pictures/muse.png, id=245, 302.63063pt x 213.04594pt>
+<./chapters/pictures/muse.png, id=263, 302.63063pt x 213.04594pt>
 File: ./chapters/pictures/muse.png Graphic file (type png)
 <use ./chapters/pictures/muse.png>
 Package pdftex.def Info: ./chapters/pictures/muse.png  used on input line 24.
@@ -376,9 +379,7 @@ Package pdftex.def Info: ./chapters/pictures/muse.png  used on input line 24.
 LaTeX Font Info:    Trying to load font information for TS1+phv on input line 25.
  (f:/programme/texlive/2025/texmf-dist/tex/latex/psnfss/ts1phv.fd
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
-)
-
-[6]) (./chapters/synthesis.tex
+)) (./chapters/synthesis.tex
 
 
 Underfull \hbox (badness 2065) in paragraph at lines 11--12
@@ -386,42 +387,40 @@ Underfull \hbox (badness 2065) in paragraph at lines 11--12
  []
 
 ) (./chapters/conclusion.tex) (./bare_jrnl_compsoc.bbl
-LaTeX Font Info:    Calculating math sizes for size <8.03> on input line 58.
+
+[7 <./chapters/pictures/muse.png>]
+LaTeX Font Info:    Calculating math sizes for size <8.03> on input line 52.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8.03> on input line 58.
+(Font)              <8.03> on input line 52.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5.62097> on input line 58.
+(Font)              <5.62097> on input line 52.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <4.015> on input line 58.
+(Font)              <4.015> on input line 52.
 
 
-[7 <./chapters/pictures/muse.png>])
+)
 
-
-
-[8
-
-] (./bare_jrnl_compsoc.aux)
+[8] (./bare_jrnl_compsoc.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-09-02>
  ***********
 Package rerunfilecheck Info: File `bare_jrnl_compsoc.out' has not changed.
-(rerunfilecheck)             Checksum: 1D67BDE4F0E308B565382535105BA5CB;4983.
+(rerunfilecheck)             Checksum: 124E317038FFD38F108670B91ADDE3A7;4652.
  ) 
 Here is how much of TeX's memory you used:
- 9735 strings out of 467748
- 157711 string characters out of 5425927
- 578093 words of memory out of 5000000
- 38240 multiletter control sequences out of 15000+600000
+ 9744 strings out of 467748
+ 158023 string characters out of 5425927
+ 578249 words of memory out of 5000000
+ 38248 multiletter control sequences out of 15000+600000
  669840 words of font info for 122 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 75i,6n,79p,1971b,590s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,6n,79p,1971b,588s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <f:/programme/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><f:/programme/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><f:/programme/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><f:/programme/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><f:/programme/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><f:/programme/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><f:/programme/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb><f:/programme/texlive/2025/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><f:/programme/texlive/2025/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb><f:/programme/texlive/2025/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on bare_jrnl_compsoc.pdf (8 pages, 1677270 bytes).
+Output written on bare_jrnl_compsoc.pdf (8 pages, 1836170 bytes).
 PDF statistics:
- 336 PDF objects out of 1000 (max. 8388607)
- 287 compressed objects within 3 object streams
- 64 named destinations out of 1000 (max. 500000)
- 239 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 346 PDF objects out of 1000 (max. 8388607)
+ 294 compressed objects within 3 object streams
+ 65 named destinations out of 1000 (max. 500000)
+ 236 words of extra memory for PDF output out of 10000 (max. 10000000)
 

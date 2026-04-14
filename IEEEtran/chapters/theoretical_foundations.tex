@@ -2,37 +2,34 @@
 
 
 
-\section{Theoretical Foundations}
+\section{Stress and the autonomic nervous system}
 
-This chapter examines the individual components of this reasearch. It starts with a deeper look at stress and its impact on the Autonomic Nervous System, followed by a discussion on heart rate and heart rate variability. Moreover, the concept of rPPG, the mechanism of biofeedback, and the influence of music on stress regulations are investigated.
+% This chapter examines the individual components of this reasearch. It starts with a deeper look at stress and its impact on the Autonomic Nervous System, followed by a discussion on heart rate and heart rate variability. Moreover, the concept of rPPG, the mechanism of biofeedback, and the influence of music on stress regulations are investigated.
 
-\subsection{Stress and the Autonomic Nervous System}
+This chapter starts with a deeper look  at stress and its impact on the autonomic nervous system. It explains why stress has an impact on the cardiovascular system. Moreover, it differentiates between the heart rate and the heart rate variability.
 
-The Autonomic Nervous System (ANS) consists of the parasympathetic and the sympathetic branches. The paraympathikus system act during periods of rest and calm and regulates functions such as “rest and digest”. In contrast, the sympathetic system is activated situations in which we precive a threat. In these cases, the heart rate increases to release more energy \cite{mccorry2007physiology}.
+The autonomic nervous system consists of the parasympathetic and the sympathetic branches. The parasympathetic system acts during periods of rest and calm and regulates functions such as rest and digest. In contrast, the sympathetic system is activated in situations in which we perceive a threat. In these cases, the heart rate increases to release more energy \cite{mccorry2007physiology}.
 
 McEwen (2007) describes this as the allostatic effect. The body dynamically adjusts its internal state to meet the standards of the environment. For instance, in a life threatening situation a lot of energy is released. The short-term mobilization of energy is a protective reaction of the body. If this activation occurs chronically without enough recovery, it can lead to permenant damage (Figure \ref{fig:allostatic_load}) \cite{mcewen2017neurobiology}.
 
-Individual differences in stress perception are rooted in the brains’ ability to evaluate environmental stimuli. According to McEwen (2007), the brain exhibits significant plasticity, meaning its responses to stressors is shaped by genetics, early development, and past experiences. If an individual has for example experiences a trauma, the brain’s system may become hypersensitiv. It might trigger a ‘fight or flight’ response in harmless situations. This can lead to coping strategies, such as smoking or drinking. These coping stragies try to calm down the parasympathetic branch of the autonomic Nervous System. On the other hand, the plasticity also allows for an intervention in the other direction. The brain can be trained to shift from a threatening state to a calm state \cite{mcewen2017neurobiology}.
+Individual differences in stress perception are rooted in the brain's ability to evaluate environmental stimuli. According to McEwen (2007), the brain exhibits significant plasticity, meaning its responses to stressors are shaped by genetics, early development, and past experiences. If an individual has for example experienced a trauma, the brain’s system may become hypersensitive \cite{mcewen2017neurobiology}. It might trigger a ‘fight or flight’ response in harmless situations\cite{mccorry2007physiology}. This can lead to coping strategies, such as smoking or drinking. These coping strategies try to calm down the sympathetic branch of the autonomic nervous system. On the other hand, the plasticity also allows for an intervention in the other direction. The brain can be trained to shift from a threatening state to a calm state \cite{mcewen2017neurobiology}.
 
 \begin{figure}[!ht]
     \centering
     \includegraphics[width=0.9\columnwidth]{./chapters/pictures/test.png}
-    \caption{The Figure illustrates the mechanism of allostatic load and the underlying pathways of stress perception and physiological adaption. \cite{mcewen2017neurobiology}}
+    \caption{The figure illustrates the mechanism of allostatic load and the underlying pathways of stress perception and physiological adaptation \cite{mcewen2017neurobiology}.}
     \label{fig:allostatic_load}
 \end{figure}
 
 
-\subsection{Heart Beat and Heart Rate Variability}
+When monitoring the heart, it is crucial to differentiate between the heart rate and the heart rate variability. The heart rate can be thought of as the quantity and the heart rate variability as the quality of heart activity\cite{shaffer2017overview}.
 
-To understand the mechanics of stress detection, it is essential to differentiate between the quantity and the quality of heart activity. These two aspects are represented by Heart Rate (HR) and Heart Rate Variability (HRV) \cite{shaffer2017overview}.
-
-Heart Rate (HR) is defined as the total number of heartbeats per minute. It acts as a measure of how fast the heart is beating at any given moment. It remains a relatively coarse metric. For instance, in an office environment, HR often stays within a specific range, as there is not enough physical activity. This can make it an insensitive marker for subtle cognitive loads or early-stage stress \cite{shaffer2017overview}.
+The heart rate measures the total number of heartbeats per minute. It reflects how fast the heart is beating at any given moment. However, it can be described as a relatively coarse metric. Therefore, it is a releative insensitive marker for early-stage stress \cite{shaffer2017overview}.
 
 Heart Rate Variability (HRV), on the other hand, focuses on the smaller level of cardiac timing. It describes  the fluctuation in the time intervals between two heartbeats. This is defined as Interbeat Intervals (IBIs). HRV consists of the constant changes in these time intervals from one beat to the next \cite{shaffer2017overview}.
 
-From a physiological standpoint, a healthy biological system requires to be highly adaptable. This means that a healthy heart does not maintain a perfectly rigid or identical time between intervals. Instead, the autonomic nervous system constantly changes the timing of each beat to respond to internal and external demands \cite{shaffer2017overview}.
+From a physiological standpoint, a healthy biological system needs to be highly adaptable. This means that a healthy heart does not maintain a perfectly rigid or identical time between intervals. Instead, the autonomic nervous system constantly changes the timing of each beat to respond to internal and external demands \cite{shaffer2017overview}.
 
-% hier vielleicht noch ein wenig kürzer das ist schon sehr viel text (hier nochmal nach AI schauen)
 If the intervals between heartbeats become too consistent and lose this natural irregularity, it is often a clinical sign of physiological strain or a lack of regulatory flexibility. High variability indicates that the body is in a state of balance and can rapidly adjust to stressors. Therefore, while HR measures the quantity of beats, HRV reflects the quality and efficiency of the autonomic nervous system’s control over the cardiovascular system \cite{shaffer2017overview}.
 
 
@@ -90,6 +87,19 @@ While the forehead provides a stable signal, it has the practical drawback of of
 \subsubsection{direkte Landmarks}
 
 A central problem of rPPG tracking is noise due to motion and light changes. Especially in the use case of human-computer interaction, brightness changes lead to severe fluctuations of pixel values in the face; examples include watching a movie or gaming. Li et al. (2014) propose a framework to solve these issues. First of all, the Viola-Jones detector is used to get a rough estimation of the face location. Then, 66 facial landmarks are placed, and based on these landmarks, a precise mask for the region of interest (ROI) is generated. KLT (Kanade-Lucas-Tomasi) points are used to continuously track the face, ensuring it is also tracked when moved. A second important step is the correction of brightness changes. It is assumed that these changes are not only visible in the face but also in the background. The average brightness changes in both the background and the face are measured, and a normalized least mean squares (NLMS) filter is used to find the optimal coefficient to subtract background noise from the facial area. Furthermore, non-rigid movement like smiling or speaking induces changes in the skin which cannot be compensated through tracking alone. Consequently, the measurements are split into small segments, and those with a high standard deviation are discarded. The remaining signal is processed with a bandpass filter to only allow for frequencies of 0.7 to 4 Hz (42–240 BPM). This framework was tested with the sophisticated MAHNOB-HCI database and reached a low error score of 6.87\% with 527 users. Despite these achievements, there are still quite a few problems; for instance, large head movements lead to a significant loss of KLT tracker points, which results in an unstable localization of the ROI \cite{li2014remote}.
+
+\subsection{mediapipe}
+
+There are different approaches that use artificial intelligence to detect the face and the region of interest. Previous approaches used only 68 vertices in the face. A new approach, presented by Kartynnik et al. (2019), uses 468 vertices and is highly efficient. This model creates a 3D mesh of the face, meaning it can estimate the depth of each point even from a normal 2D camera \ref{fig:facemesh}. Depending on the device, it can deliver 100 to 1000+ FPS \cite{kartynnik2019real}.
+
+Different models that also use many vertices often use standard methods based on averaging effects. They don't work well when there are small inaccuracies, like the closing of one eye. Due to the architecture of the neural network developed by Kartynnik and his team, it is possible to use it in real-time. It has been trained on a dataset of around 30,000 images. It has been tested that it has the same accuracy as human experts that model the face \cite{kartynnik2019real}.
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.9\columnwidth]{./chapters/pictures/face_mesh.png}
+    \caption{Example of a face mesh calculating with an artificial intelligence model \cite{kartynnik2019real}}
+    \label{fig:facemesh}
+\end{figure}
 
 
 \subsection{Blind Source Separation}
