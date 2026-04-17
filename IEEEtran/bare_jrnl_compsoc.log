@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.17)  17 APR 2026 13:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.17)  17 APR 2026 15:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -297,22 +297,20 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    Trying to load font information for U+pzd on input line 488.
  (f:/programme/texlive/2025/texmf-dist/tex/latex/psnfss/upzd.fd
 File: upzd.fd 2001/06/04 font definitions for U/pzd.
-) (./chapters/introduction.tex) (./chapters/stress.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
+) (./chapters/introduction.tex)
 
-
-
-<./chapters/pictures/test.png, id=110, 797.22844pt x 335.00156pt>
-File: ./chapters/pictures/test.png Graphic file (type png)
-<use ./chapters/pictures/test.png>
-Package pdftex.def Info: ./chapters/pictures/test.png  used on input line 19.
-(pdftex.def)             Requested size: 227.64894pt x 95.66045pt.
-
+(./chapters/stress.tex
 
 [1{f:/programme/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{f:/programme/texlive/2025/texmf-dist/fonts/enc/dvips/base/8r.enc}
 
 
-]) (./chapters/rPPG.tex
+]
+<./chapters/pictures/test.png, id=124, 797.22844pt x 335.00156pt>
+File: ./chapters/pictures/test.png Graphic file (type png)
+<use ./chapters/pictures/test.png>
+Package pdftex.def Info: ./chapters/pictures/test.png  used on input line 19.
+(pdftex.def)             Requested size: 227.64894pt x 95.66045pt.
+) (./chapters/rPPG.tex
 
 <./chapters/pictures/blood_frequencies.png, id=136, 482.55281pt x 247.67531pt>
 File: ./chapters/pictures/blood_frequencies.png Graphic file (type png)
@@ -328,12 +326,15 @@ LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <9.53561> not available
 (Font)              Font shape `OT1/phv/m/sl' tried instead on input line 34.
 
 
-[2 <./chapters/pictures/test.png> <./chapters/pictures/blood_frequencies.png> <./chapters/pictures/ROI.png>]
-<./chapters/pictures/face_mesh.png, id=163, 321.45094pt x 180.675pt>
+[2 <./chapters/pictures/test.png> <./chapters/pictures/blood_frequencies.png>]
+<./chapters/pictures/face_mesh.png, id=162, 321.45094pt x 180.675pt>
 File: ./chapters/pictures/face_mesh.png Graphic file (type png)
 <use ./chapters/pictures/face_mesh.png>
 Package pdftex.def Info: ./chapters/pictures/face_mesh.png  used on input line 47.
 (pdftex.def)             Requested size: 227.64894pt x 127.95758pt.
+
+Underfull \vbox (badness 1184) has occurred while \output is active []
+
 
 
 LaTeX Font Info:    Calculating math sizes for size <9.53561> on input line 60.
@@ -343,23 +344,23 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6.6749> on input line 60.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <4.7678> on input line 60.
-<./chapters/pictures/color_channels.png, id=170, 654.19406pt x 342.5297pt>
+<./chapters/pictures/color_channels.png, id=169, 654.19406pt x 342.5297pt>
 File: ./chapters/pictures/color_channels.png Graphic file (type png)
 <use ./chapters/pictures/color_channels.png>
 Package pdftex.def Info: ./chapters/pictures/color_channels.png  used on input line 66.
 (pdftex.def)             Requested size: 227.64894pt x 119.19205pt.
 
 
-[3 <./chapters/pictures/face_mesh.png> <./chapters/pictures/color_channels.png>]
+[3 <./chapters/pictures/ROI.png> <./chapters/pictures/face_mesh.png>]
 
-<./chapters/pictures/chrom_light.png, id=195, 351.56343pt x 242.40562pt>
+<./chapters/pictures/chrom_light.png, id=194, 351.56343pt x 242.40562pt>
 File: ./chapters/pictures/chrom_light.png Graphic file (type png)
 <use ./chapters/pictures/chrom_light.png>
 Package pdftex.def Info: ./chapters/pictures/chrom_light.png  used on input line 95.
 (pdftex.def)             Requested size: 227.64894pt x 156.96257pt.
 
 
-[4 <./chapters/pictures/chrom_light.png>]
+[4 <./chapters/pictures/color_channels.png> <./chapters/pictures/chrom_light.png>]
 
 ) (./chapters/passiveMusic.tex
 
@@ -372,20 +373,20 @@ LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 19
  (f:/programme/texlive/2025/texmf-dist/tex/latex/psnfss/ts1ppl.fd
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 )
+
 <./chapters/pictures/muse.png, id=266, 302.63063pt x 213.04594pt>
 File: ./chapters/pictures/muse.png Graphic file (type png)
 <use ./chapters/pictures/muse.png>
 Package pdftex.def Info: ./chapters/pictures/muse.png  used on input line 24.
 (pdftex.def)             Requested size: 227.64894pt x 160.26192pt.
 LaTeX Font Info:    Trying to load font information for TS1+phv on input line 25.
- (f:/programme/texlive/2025/texmf-dist/tex/latex/psnfss/ts1phv.fd
+(f:/programme/texlive/2025/texmf-dist/tex/latex/psnfss/ts1phv.fd
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
-)
+)) (./chapters/synthesis.tex
 
-) (./chapters/synthesis.tex
+[7 <./chapters/pictures/muse.png>]) (./chapters/conclusion.tex
 
-[7 <./chapters/pictures/muse.png>]) (./chapters/conclusion.tex) (./bare_jrnl_compsoc.bbl
-
+) (./bare_jrnl_compsoc.bbl
 LaTeX Font Info:    Calculating math sizes for size <8.03> on input line 49.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8.03> on input line 49.
@@ -407,18 +408,18 @@ LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-09-02>
  ***********
 Package rerunfilecheck Info: File `bare_jrnl_compsoc.out' has not changed.
-(rerunfilecheck)             Checksum: 847A107FA44010F76A1F4825B609267F;4300.
+(rerunfilecheck)             Checksum: 5AE2084808FD9EC2E0CE5BFC901507B7;4310.
  ) 
 Here is how much of TeX's memory you used:
  9769 strings out of 467748
- 158479 string characters out of 5425927
- 582168 words of memory out of 5000000
+ 158489 string characters out of 5425927
+ 581168 words of memory out of 5000000
  38260 multiletter control sequences out of 15000+600000
  669840 words of font info for 122 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 75i,6n,79p,1908b,590s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,7n,79p,1992b,590s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <f:/programme/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><f:/programme/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><f:/programme/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><f:/programme/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><f:/programme/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><f:/programme/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><f:/programme/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb><f:/programme/texlive/2025/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><f:/programme/texlive/2025/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb><f:/programme/texlive/2025/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on bare_jrnl_compsoc.pdf (9 pages, 1840952 bytes).
+Output written on bare_jrnl_compsoc.pdf (9 pages, 1841375 bytes).
 PDF statistics:
  369 PDF objects out of 1000 (max. 8388607)
  315 compressed objects within 4 object streams
