@@ -175,6 +175,11 @@ INPUT f:/programme/texlive/2025/texmf-dist/fonts/tfm/adobe/palatino/pplrc7t.tfm
 INPUT ./chapters/stress.tex
 INPUT ./chapters/stress.tex
 INPUT chapters/stress.tex
+INPUT ./chapters/pictures/test.png
+INPUT ./chapters/pictures/test.png
+INPUT ./chapters/pictures/test.png
+INPUT ./chapters/pictures/test.png
+INPUT ./chapters/pictures/test.png
 INPUT f:/programme/texlive/2025/texmf-dist/fonts/tfm/adobe/helvetic/phvr7t.tfm
 INPUT f:/programme/texlive/2025/texmf-dist/fonts/vf/adobe/helvetic/phvr7t.vf
 INPUT f:/programme/texlive/2025/texmf-dist/fonts/tfm/adobe/helvetic/phvr8r.tfm
@@ -197,11 +202,6 @@ INPUT f:/programme/texlive/2025/texmf-dist/fonts/vf/adobe/palatino/pplrc7t.vf
 INPUT f:/programme/texlive/2025/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm
 INPUT f:/programme/texlive/2025/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm
 INPUT f:/programme/texlive/2025/texmf-dist/fonts/vf/adobe/palatino/pplr7t.vf
-INPUT ./chapters/pictures/test.png
-INPUT ./chapters/pictures/test.png
-INPUT ./chapters/pictures/test.png
-INPUT ./chapters/pictures/test.png
-INPUT ./chapters/pictures/test.png
 INPUT ./chapters/rPPG.tex
 INPUT ./chapters/rPPG.tex
 INPUT chapters/rPPG.tex

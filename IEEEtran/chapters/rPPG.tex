@@ -2,9 +2,9 @@
 
 To measure the heart beat and the heart beat variability a technology called remote Photoplethysmography can be employed \cite{verkruysse2008remote}.
 
-First, the theoretical foundations are explained, followed by a discussion on the optimal regions of interest within the facial area. Based on these regions, various approaches for detecting and tracking the ROI are presented. Furthermore, the chapter examines traditional methods of feature extraction before discussing modern artificial intelligence-based paradigms.
+First, the theoretical foundations are explained, followed by a discussion on the optimal regions of interest within the facial area. Based on these regions, various approaches for detecting and tracking the ROI are presented. Furthermore, the chapter examines traditional methods of feature extraction before discussing modern AI approaches.
 
-\subsection{Theoretical Foundations}
+\subsection{Theoretical foundations}
 The foundational work for modern remote photoplethysmography (rPPG) was made by Verkruysse et al. (2008), who demonstrated that the heart beat could be monitored using a standard digital camera. This relies on the fact that hemoglobin absords light differently than the neighboring body tissue. As the blood volume changes in the body with every heartbeat, the intensity of the reflected light varies. Their research identified that the green color channel contains the strongest information regarding the heart beat (Figure \ref{fig:blood_frequencies}). Despite the successful proof-of-concept, two challenges were highlighted: Motion artifcats caused by movement and  noise due to the camera's sensor \cite{verkruysse2008remote}.
 
 %  hier noch auf das Beer-Lambert Law eingehen
@@ -16,11 +16,11 @@ The foundational work for modern remote photoplethysmography (rPPG) was made by 
 \end{figure}
 
 
-\subsection{Face Detection and region of interest selection}
+\subsection{Face detection and region of interest selection}
 
-The selection of the right region of interest for rPPG measurements is critical for the suppression of motion and illumination artifacts. Previous approaches often utilized the entire face as a global ROI for signal extraction. However, Lempe et al. (2013) demonstrated that the signal quality varies substantially across different facial areas \cite{lempe2013roi}.
+The selection of the right region of interest for rPPG measurements is critical for the suppression of motion and illumination artifacts. Previous approaches often utilized the entire face as a global ROI for signal extraction. However, Lempe et al. (2013) demonstrated that the signal quality varies across different facial areas \cite{lempe2013roi}.
 
-To quantify this, they implemented a grid layout over the face and calculated the local signal-to-noise ratio for each segment. Through this spatial analysis, the cheek regions were identified as the most promising areas for pulse extraction (Figure \ref{fig:roi}) \cite{lempe2013roi}.
+The face was divided into several small squares forming a grid layout. For every part of the grid the signal-to-noise ratio was calculated. The cheek regions were identified to have the smallest amount of noises and are therefore choosen for the pulse extraction \cite{lempe2013roi}.
 
 A significant practical advantage of the cheeks is that they are rarely covered by clothing or facial hair, which supports a more stable measurement compared to a global face ROI. These findings highlight a significant technical challenge. The requirement for advanced segmentation and tracking algorithms that can reliably detect and follow the cheek area, even during head movements, to ensure a consistent and high-quality pulse signal \cite{lempe2013roi}.
 
@@ -34,7 +34,7 @@ A significant practical advantage of the cheeks is that they are rarely covered 
 \subsubsection{Landmark Tracking}
 
 
-Lempe et al. (2013) identified the optimal regions for extraction. The challenge is to keep these region of interests stable and to handle noise due to motion and light changes. Especially in the use case of human-computer interaction, brightness changes lead to severe fluctuations of pixel values in the face, examples include watching a movie or gaming. Li et al. (2014) propose a framework to solve these issues. First of all, the viola-jones detector is used to get a rough estimation of the face location. Then, 66 facial landmarks are placed, and based on these landmarks, a precise mask for the region of interest is generated.To maintain a stable measurement, the Kanade-Lucas-Tomasi (KLT) feature tracker is employed. KLT points are used to continuously track the face, ensuring it is also tracked when moved. A second important step is the correction of brightness changes. It is assumed that these changes are not only visible in the face but also in the background. The average brightness changes in both the background and the face are measured, and a normalized least mean squares filter is used to find the optimal coefficient to subtract background noise from the facial area. Furthermore, non-rigid movement like smiling or speaking induces changes in the skin which cannot be compensated through tracking alone. Consequently, the measurements are split into small segments, and those with a high standard deviation are discarded. This framework was tested with the sophisticated MAHNOB-HCI database and reached a low error score of 6.87\% with 527 users. Despite these achievements, there are still quite a few problems; for instance, large head movements lead to a significant loss of KLT tracker points, which results in an unstable localization of the ROI \cite{li2014remote}.
+Lempe et al. (2013) identified the optimal regions for extraction. The challenge is to keep these region of interests stable and to handle noise due to motion and light changes. Especially in the use case of human-computer interaction, brightness changes lead to severe fluctuations of pixel values in the face, examples include watching a movie or gaming. Li et al. (2014) propose a framework to solve these issues. First of all, the viola-jones detector is used to get a rough estimation of the face location. Then, 66 facial landmarks are placed, and based on these landmarks, a precise mask for the region of interest is generated.To maintain a stable measurement, the Kanade-Lucas-Tomasi (KLT) feature tracker is employed. KLT points are used to continuously track the face, ensuring it is also tracked when moved. A second important step is the correction of brightness changes. It is assumed that these changes are not only visible in the face but also in the background. The average brightness changes in both the background and the face are measured, and a normalized least mean squares filter is used to find the optimal coefficient to subtract background noise from the facial area. Furthermore, non-rigid movement like smiling or speaking induces changes in the skin which cannot be compensated through tracking alone. Consequently, the measurements are split into small segments, and those with a high standard deviation are discarded. This framework was tested with the sophisticated MAHNOB-HCI database and reached a low error score of 6.87\% with 527 users. Despite these achievements, there are still quite a few problems. For instance, large head movements lead to a significant loss of KLT tracker points, which results in an unstable localization of the ROI \cite{li2014remote}.
 
 \subsubsection{High-Density 3d Face Mesh}
 
@@ -51,15 +51,15 @@ Different models that also use many vertices often use standard methods based on
 
 \subsection{Traditional Frameworks for signal extraction}
 
-Traditional rPPG frameworks typically follow a multi-stage process. First, the face is detected and tracked, often using the Viola-Jones algorithm or similar cascade classifiers to define a region of interest. Then methods such as Principal component Analysis (PCA) or Independet Component Analysis (ICA) are employed to isolate the pulse signal from the green color channel. While effective if the person remains still, these approaches struggle with motion artifacts, as they require quite a few seconds of stable data to compute the signal components \cite{Debnath25}.
+Traditional rPPG frameworks typically follow a multi-stage process. First, the face is detected and tracked, often using the Viola-Jones algorithm or similar classifiers to define a region of interest. Then methods such as Principal component Analysis (PCA) or Independet Component Analysis (ICA) are employed to isolate the pulse signal from the green color channel. While effective if the person remains still, these approaches struggle with motion artifacts, as they require quite a few seconds of stable data to compute the signal components \cite{Debnath25}.
 
 \subsubsection{Blind Source Separation}
 
-Poh et al. (2010) introduced blind source separation (BSS) to rPPG. Their framework assumes that the recorded RGB channels do not only contain the pulse information but also significant noise in the form of light changes and movement. The challenge is that this noise has to be separated from the real physiological information. Mathematically speaking, the resulting color channels are treated as a linear mixture \cite{poh2010non}:
+Poh et al. (2010) introduced a framework using blind source separation to analyse the heart beat. Their framework assumes that the recorded RGB channels do not only contain the pulse information but also significant noise in the form of light changes and movement. The challenge is that this noise has to be separated from the real physiological information. Mathematically speaking, the resulting color channels are treated as a linear mixture \cite{poh2010non}:
 
 $$x(t) = As(t)$$
 
-The goal is to find a demixing matrix $W$, so that the original source signals $\hat{s}(t) = Wx(t)$ can be calculated. To find $W$, it is important to search for statistical independence between the sources. For that, the JADE algorithm (Joint Approximate Diagonalization of Eigenmatrices) is used. Unlike deterministic methods, JADE is an iterative process that tries out different combinations to maximize non-Gaussianity, which results in a higher computational load and increased latency (Figure \ref{fig:color_channels}) \cite{poh2010non}.
+To separate the actual signal from the noise, a matrix $W$ has to be found, that solves the equation $\hat{s}(t) = Wx(t)$. To find the matrix, it must be searched for statistical independence. The Java algorithm  (Joint Approximate Diagonalization of Eigenmatrices) is employed for this. JADE is an iterative approach that find the best solution by trial and error. Consequently, this leads to an increase in computational load and latency (Figure \ref{fig:color_channels}) \cite{poh2010non}.
 
 \begin{figure}[!ht]
     \centering
@@ -69,7 +69,7 @@ The goal is to find a demixing matrix $W$, so that the original source signals $
 \end{figure}
 
 
-For the initial localization, the viola-Jones algorithm is used to detect the face. In this specific setup, only 60\% of the bounding box width is used as the Region of Interest. The raw signals from this ROI are then spatially averaged and normalized using Zero-Mean and Unit-Variance to balance different channel intensities \cite{poh2010non}.
+For the initial localization, the viola-Jones algorithm is used to detect the face. In this specific setup, only 60\% of the bounding box width is used as the region of interest. The raw signals from this ROI are then spatially averaged and normalized using Zero-Mean and Unit-Variance to balance different channel intensities \cite{poh2010non}.
 
 After the independent components are recovered, the pulse is extracted by using the fast fourier transform. An operational range from [0.75 - 4.0] Hz is allowed, because this corresponds to 45 - 240 BPM, the range a human pulse usually lies in. Additionally, a temporal consistency threshold is implemented.A jump of only 12 BPM is allowed between consecutive measurements that are taken one second apart. Anything different is rejected as noise or an artifact. The highest power peak within the frequency spectrum is chosen as the final heart rate \cite{poh2010non}.
 
@@ -116,7 +116,7 @@ $$1.2 Hz \times 60 seconds = 72 BPM$$
 
 One of the most significant advantages of CHROM is its temporal efficiency. While traditional BSS methods (Blind Source Separation) like ICA or PCA often require up to 30 seconds of data to stabilize, CHROM utilizes an Overlap-Add (WOLA) procedure. By using overlapping windows of only 1.6 seconds, the system provides a continuous, near-instantaneous pulse estimate \cite{dehaan2013chrom}.
 
-In comparative studies, the robustness of CHROM is evident. CHROM has a high stationary accuracy and predictes the correct pulse with a 98\% accuracy. It has a 92\% correlation with the medical-grade contact sensor. Furthermore, it is resilient against motion. Under heavy motion, e.g., on a fitness stepper, it maintains a 48\% success rate. ICA and PCA fail significantly, and only reach 4\% and 11\%. Moreover, CHROM can also process different skin tones. Darker skin tones naturally lower the Signal-to-Noise ratio because they absord more light. Chrom remains the most robust classical algorithm across all phenotypes \cite{dehaan2013chrom}.
+In comparative studies, the robustness of CHROM is evident. CHROM has a high stationary accuracy and predictes the correct pulse with a 98\% accuracy. It has a 92\% correlation with the medical-grade contact sensor. Furthermore, it is resilient against motion. Under heavy motion, e.g., on a fitness stepper, it maintains a 48\% success rate. ICA and PCA fail significantly, and only reach 4\% and 11\%. Moreover, CHROM can also process different skin tones. Darker skin tones naturally lower the signalto noise ratio because they absord more light. Chrom remains the most robust classical algorithm across all phenotypes \cite{dehaan2013chrom}.
 
 \subsubsection{Modern Deep Learning Paradigms}
 
@@ -124,7 +124,7 @@ While physics-based methods like CHROM improved the handling of light and motion
 
 Following the initial proof-of-concept, a significant increase in rPPG research was observed, particularly after 2017. This trend is closely linked to the rapid improvements in artificial intelligence and deep learning. In 2025 82.05\% \cite{Debnath25} of papers about rPPG technology used an approach with artificial intelligence. A major problem is the availability of diverse, large-scale datasets. The available sets only have data of people from North America, Europe and China. This leads to a huge underrepresentation of various age groups and diverse skin pigmentations \cite{Debnath25}.
 
-With the rapid advancement in artificial intelligence, modern rPPG systems have shifted towards end-to-end models. These architectures can process raw data or image sequences to estimate heart rate directly, often without the need for manual face isolation or region of intrest  selection. There are three architectural paradigms: Convolutional Neural Networks (CNNs), Hybrid Neural Networks and Transformed-based architectures \cite{Debnath25}.
+With the rapid advancement in artificial intelligence, modern rPPG systems have shifted towards end-to-end models. These architectures can process raw data or image sequences to estimate heart rate directly, often without the need for manual face isolation or region of interest  selection. There are three architectural paradigms: Convolutional Neural Networks (CNNs), Hybrid Neural Networks and Transformed-based architectures \cite{Debnath25}.
 
 In modern rPPG systems, convolutional neural networks (CNNs) are the standard for processing image data. Their main task is to recognize the very subtle color changes in the skin pixels that happen during a cardiac cycle \cite{Debnath25}.
 
