@@ -1,19 +1,19 @@
 # Fdb version 4
-["bibtex bare_jrnl_compsoc"] 1776513161.7531 "bare_jrnl_compsoc.aux" "bare_jrnl_compsoc.bbl" "bare_jrnl_compsoc" 1776514676.63669 0
+["bibtex bare_jrnl_compsoc"] 1776602251.18295 "bare_jrnl_compsoc.aux" "bare_jrnl_compsoc.bbl" "bare_jrnl_compsoc" 1776602255.61403 0
   "./literatur.bib" 1776420980 8900 4a10ca4477e19504a4464a69f9e81177 ""
-  "bare_jrnl_compsoc.aux" 1776514675 9650 f71a18e86737a66a84f1037ccb6431fd "pdflatex"
+  "bare_jrnl_compsoc.aux" 1776602254 9662 edec5cb7ec6a56fda2b99f7f9ec6fc86 "pdflatex"
   "f:/programme/texlive/2025/texmf-dist/bibtex/bst/ieeetran/IEEEtran.bst" 1760693413 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
   (generated)
   "bare_jrnl_compsoc.bbl"
   "bare_jrnl_compsoc.blg"
   (rewritten before read)
-["pdflatex"] 1776514672.74147 "f:/Studium/05_2024-Sommersemester/Fachseminar/Fachseminar PO18 Informationen/Computer_Society_LaTeX_template_test/IEEEtran/bare_jrnl_compsoc.tex" "bare_jrnl_compsoc.pdf" "bare_jrnl_compsoc" 1776514676.63838 0
+["pdflatex"] 1776602251.90329 "f:/Studium/05_2024-Sommersemester/Fachseminar/Fachseminar PO18 Informationen/Computer_Society_LaTeX_template_test/IEEEtran/bare_jrnl_compsoc.tex" "bare_jrnl_compsoc.pdf" "bare_jrnl_compsoc" 1776602255.61615 0
   "IEEEtran.cls" 1775630232 288304 5b2e4fa15b0f7eabb840ebf67df4c0f7 ""
-  "bare_jrnl_compsoc.aux" 1776514675 9650 f71a18e86737a66a84f1037ccb6431fd "pdflatex"
-  "bare_jrnl_compsoc.bbl" 1776513162 6383 084f83ba5f30a18d67bbdca630a9340f "bibtex bare_jrnl_compsoc"
-  "bare_jrnl_compsoc.out" 1776514675 4236 225738b0f79d84573f0c1b59e4335ea2 "pdflatex"
+  "bare_jrnl_compsoc.aux" 1776602254 9662 edec5cb7ec6a56fda2b99f7f9ec6fc86 "pdflatex"
+  "bare_jrnl_compsoc.bbl" 1776602251 6383 084f83ba5f30a18d67bbdca630a9340f "bibtex bare_jrnl_compsoc"
+  "bare_jrnl_compsoc.out" 1776602254 4302 06fd85a5a3d359d02f07020f1f596d19 "pdflatex"
   "bare_jrnl_compsoc.tex" 1776512874 24732 7b2a06a71a3ed43e0c62fc263f46a2cb ""
-  "chapters/case_studies.tex" 1776509096 4174 3f91a64ddbe0bed70622ee3b69307a4a ""
+  "chapters/case_studies.tex" 1776602245 4186 a7076cb2c4478c108c677ae12534fdc2 ""
   "chapters/conclusion.tex" 1776507259 841 d53991f573ee8cce9b77bde8f75830ad ""
   "chapters/consciousness.tex" 1776431965 623 75afb0366bf598d12c4c2407e41b2d43 ""
   "chapters/heartmusic.tex" 1776512626 1486 28a4af36527f89410f13688f3419b4a7 ""

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.17)  18 APR 2026 14:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.17)  19 APR 2026 14:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -409,7 +409,7 @@ LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-09-02>
  ***********
 Package rerunfilecheck Info: File `bare_jrnl_compsoc.out' has not changed.
-(rerunfilecheck)             Checksum: 225738B0F79D84573F0C1B59E4335EA2;4236.
+(rerunfilecheck)             Checksum: 06FD85A5A3D359D02F07020F1F596D19;4302.
  ) 
 Here is how much of TeX's memory you used:
  9771 strings out of 467748
@@ -420,7 +420,7 @@ Here is how much of TeX's memory you used:
  1144 hyphenation exceptions out of 8191
  75i,6n,79p,1992b,586s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <f:/programme/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><f:/programme/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><f:/programme/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><f:/programme/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><f:/programme/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><f:/programme/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><f:/programme/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb><f:/programme/texlive/2025/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><f:/programme/texlive/2025/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb><f:/programme/texlive/2025/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on bare_jrnl_compsoc.pdf (9 pages, 1842608 bytes).
+Output written on bare_jrnl_compsoc.pdf (9 pages, 1842713 bytes).
 PDF statistics:
  378 PDF objects out of 1000 (max. 8388607)
  324 compressed objects within 4 object streams
