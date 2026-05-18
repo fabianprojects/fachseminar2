@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.17)  19 APR 2026 14:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.17)  23 APR 2026 13:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -300,17 +300,17 @@ File: upzd.fd 2001/06/04 font definitions for U/pzd.
 ) (./chapters/introduction.tex)
 
 (./chapters/stress.tex
-<./chapters/pictures/test.png, id=114, 797.22844pt x 335.00156pt>
-File: ./chapters/pictures/test.png Graphic file (type png)
-<use ./chapters/pictures/test.png>
-Package pdftex.def Info: ./chapters/pictures/test.png  used on input line 15.
-(pdftex.def)             Requested size: 227.64894pt x 95.66045pt.
-
 
 [1{f:/programme/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{f:/programme/texlive/2025/texmf-dist/fonts/enc/dvips/base/8r.enc}
 
 
-]) (./chapters/rPPG.tex
+]
+<./chapters/pictures/test.png, id=128, 797.22844pt x 335.00156pt>
+File: ./chapters/pictures/test.png Graphic file (type png)
+<use ./chapters/pictures/test.png>
+Package pdftex.def Info: ./chapters/pictures/test.png  used on input line 15.
+(pdftex.def)             Requested size: 227.64894pt x 95.66045pt.
+) (./chapters/rPPG.tex
 
 <./chapters/pictures/blood_frequencies.png, id=139, 482.55281pt x 247.67531pt>
 File: ./chapters/pictures/blood_frequencies.png Graphic file (type png)
@@ -341,19 +341,19 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6.6749> on input line 60.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <4.7678> on input line 60.
-<./chapters/pictures/color_channels.png, id=172, 654.19406pt x 342.5297pt>
+<./chapters/pictures/color_channels.png, id=173, 654.19406pt x 342.5297pt>
 File: ./chapters/pictures/color_channels.png Graphic file (type png)
 <use ./chapters/pictures/color_channels.png>
-Package pdftex.def Info: ./chapters/pictures/color_channels.png  used on input line 66.
+Package pdftex.def Info: ./chapters/pictures/color_channels.png  used on input line 68.
 (pdftex.def)             Requested size: 227.64894pt x 119.19205pt.
 
 
 [3 <./chapters/pictures/face_mesh.png> <./chapters/pictures/color_channels.png>]
 
-<./chapters/pictures/chrom_light.png, id=197, 351.56343pt x 242.40562pt>
+<./chapters/pictures/chrom_light.png, id=198, 351.56343pt x 242.40562pt>
 File: ./chapters/pictures/chrom_light.png Graphic file (type png)
 <use ./chapters/pictures/chrom_light.png>
-Package pdftex.def Info: ./chapters/pictures/chrom_light.png  used on input line 95.
+Package pdftex.def Info: ./chapters/pictures/chrom_light.png  used on input line 97.
 (pdftex.def)             Requested size: 227.64894pt x 156.96257pt.
 
 
@@ -370,7 +370,7 @@ LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 16
  (f:/programme/texlive/2025/texmf-dist/tex/latex/psnfss/ts1ppl.fd
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 )
-<./chapters/pictures/muse.png, id=268, 302.63063pt x 213.04594pt>
+<./chapters/pictures/muse.png, id=269, 302.63063pt x 213.04594pt>
 File: ./chapters/pictures/muse.png Graphic file (type png)
 <use ./chapters/pictures/muse.png>
 Package pdftex.def Info: ./chapters/pictures/muse.png  used on input line 21.
@@ -414,16 +414,16 @@ Package rerunfilecheck Info: File `bare_jrnl_compsoc.out' has not changed.
 Here is how much of TeX's memory you used:
  9771 strings out of 467748
  158511 string characters out of 5425927
- 578136 words of memory out of 5000000
+ 577136 words of memory out of 5000000
  38261 multiletter control sequences out of 15000+600000
  669840 words of font info for 122 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 75i,6n,79p,1992b,586s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,7n,79p,1993b,586s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <f:/programme/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><f:/programme/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><f:/programme/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><f:/programme/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><f:/programme/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><f:/programme/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><f:/programme/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb><f:/programme/texlive/2025/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><f:/programme/texlive/2025/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb><f:/programme/texlive/2025/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on bare_jrnl_compsoc.pdf (9 pages, 1842713 bytes).
+Output written on bare_jrnl_compsoc.pdf (9 pages, 1842904 bytes).
 PDF statistics:
- 378 PDF objects out of 1000 (max. 8388607)
- 324 compressed objects within 4 object streams
+ 379 PDF objects out of 1000 (max. 8388607)
+ 325 compressed objects within 4 object streams
  64 named destinations out of 1000 (max. 500000)
  236 words of extra memory for PDF output out of 10000 (max. 10000000)
 
